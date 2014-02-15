@@ -1,0 +1,1944 @@
+#footer{
+    position:fixed !important;
+    bottom:0;
+	z-index:300;
+}
+
+
+body{
+	margin: 0;
+	padding:0;
+}
+
+a img {
+	
+	border:none;
+
+}
+
+#header{
+	z-index:300;
+	position:fixed !important;
+	height:20px;
+	width:100%;
+	top:0;
+}
+
+#logo {
+	width:160px; 
+	float:left; 
+	margin-left:5px; 
+	position:relative;
+}
+#logo img{
+    border:none;   
+}
+
+/* Menu */
+
+#menu{
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	height:40px;
+	width:100%;
+	background-color:#455560;
+}
+
+#menubackto{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: 100;
+	font-style: normal;
+	font-weight: lighter;
+	font-variant: normal;
+	text-decoration: none;
+	padding-top: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	background-image: url(./images/return_background.png);
+	color: #FFF;
+}
+
+#menu_links{
+	width:480px; 
+	height:30px; 
+	float:left; 
+	margin-top:2px;
+	margin-left:10px;
+}
+
+/* Dropdown Menu */
+
+#dropdownButton {
+	display:none;
+	background-image:url(./images/dropdownButton.png); 
+	width:44px;
+	height:44px;
+	position:absolute;
+	right:10px;
+	margin-top:-8px;
+	cursor:pointer;
+}
+
+#dropdown {
+	display:none;
+	background-image:url(./images/nav_background_mobile.png); 
+	width:100%;
+	position:absolute;
+	margin-top:-370px;
+	margin-left:-10px;
+	padding-bottom:10px;
+    margin-right:-1px;
+}
+
+#dropdown a {
+	margin:8px 0px 8px 10px;
+	width:200px;	
+}
+
+#dropdownCover {
+	display:none;
+	background:#455560;
+	width:200px;
+	height:50px;
+	position:absolute;
+	margin-top:-10px;
+}
+
+/* Link Buttons */
+
+.menubtn_active{
+	height: 30px;
+	margin-left:10px;
+	line-height: 30px; 
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	padding-left:30px;
+	padding-top:1px;	
+	background-repeat:no-repeat;
+	background-image:url(./images/menu_active.png);
+}
+
+
+a.menubtn_inactive:link {
+	text-decoration: none;
+	height: 30px;
+	margin-left:10px;
+	line-height: 30px; 
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	padding-left:30px;
+	padding-top:1px;	
+	background-repeat:no-repeat;
+	background-image:url(./images/menu_inactive.png); 
+}
+
+a.menubtn_inactive:visited {text-decoration: none; color: #FFF; }
+a.menubtn_inactive:hover {background-image:url(./images/menu_active.png); color: #FFF;}
+a.menubtn_inactive:active {text-decoration: none; color: #FFF;}
+
+#nav{
+	padding:5px;
+	float:right;
+	background-image:url(./images/nav_background.png);
+}
+
+#nav a {
+	cursor:pointer;
+}
+
+#btn{
+	background-image: url(./images/btn_background.png);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight:100;
+	padding: 8px;
+	margin: 2px;
+	width: 150px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: lighter;
+	font-variant: normal;
+	text-decoration: none;
+}
+
+/*--------links for portfolio section--------*/
+
+#subnav{
+	padding:10px;
+	float:right;
+	background-image:url(./images/nav_background.png);
+}
+
+#subnav a {
+	cursor:pointer;
+}
+
+#subbtn{
+	background-image: url(./images/btn_background.png);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	font-weight: 100;
+	padding: 8px;
+	margin: 2px;
+	/*height: 16px;*/
+	width: 150px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: lighter;
+	font-variant: normal;
+	text-decoration: none;
+}
+
+/*--------links for portfolio section---END--------*/
+
+/* Footer */
+
+#footer{
+	position: fixed;
+	background-color:#455560;
+	padding:9px;
+	bottom: 0;
+	height: 22px;
+	width: 100%; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #FFFFFF;
+}
+
+#footerImage {
+	float:right;
+	margin-right:20px;
+}
+
+#footerButton {
+	display:none;
+	width:44px;
+	height:44px;
+	background-image:url(./images/contact.png); 
+	position:absolute;
+	right:25px;
+	bottom:0px;
+	cursor:pointer;
+}
+
+#footerSlide {
+	display:none;
+	position:fixed;
+	width:100%;
+	height:50px;
+	background:#455560;
+	padding:12px;
+	bottom:-30px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.8em;
+	color: #FFFFFF;
+}
+
+#footerText {
+	float:left;
+	display:block;	
+}
+
+.locationhighlight{
+	color: #8ec23f;
+}
+
+.contentConstantsLine {
+	height: 750px;
+	width:100%;
+	margin: 0 auto;
+	padding: 0;
+	border-bottom-width:4px;
+ 	border-bottom-style:solid;
+  	border-bottom-color:#45555F;
+}
+
+.contentConstants {
+	height: 750px;
+	width:100%;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+
+
+#BufferTop {
+	height:65px; 
+	width:100%;
+}
+
+#BufferBottom {
+	height:30px; 
+	width:100%;
+}
+
+
+
+
+/* Index Sections */
+
+#hero{
+	background:url(./images/hero3.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/home.html',
+	sizingMethod='scale');
+}
+
+#work1{
+	background:url(./images/ba_hero2.jpg) 50% 0 no-repeat; background-size: cover;
+}
+
+#work2{
+	background:url(./images/o2_hero.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#work3{
+	background:url(./images/kelloggs_hero.jpg) 0 50% no-repeat; background-size: cover;
+}
+
+#work4{
+	background:url(./images/edinwork1.jpg) 0 50% no-repeat; background-size: cover;
+}
+
+#work5{
+	background:url(./images/adswork1.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#work6{
+	background:url(./images/loft_hero.jpg) 50% 0 no-repeat; background-size: cover;
+}
+
+#work7{
+	background:url(./images/wwwork1.jpg) 50% 0 no-repeat; background-size: cover;
+}
+
+#work8{
+	background:url(./images/compass_hero.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#work9{
+	background:url(./images/zurich1.jpg) 50% 65% no-repeat; background-size: 1448px 754px;
+}
+
+#work10{
+	background:url(./images/williswire.jpg) 50% 60% no-repeat; background-size: 1448px 754px;
+}
+
+
+
+/*---------british_airways_portfolio--------*/
+
+#bawork1{
+	background:url(./images/ba_hero2.jpg) 50% 0 no-repeat; background-size: cover;
+}
+
+#bawork2{
+	background:url(./images/ba_spread3.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#bawork3{
+	background:url(./images/BA_spread.jpg) 50% 50% no-repeat;  background-size: 1448px 754px;
+}
+
+#bawork4{
+	background:url(./images/ba_spread2.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#bawork5{
+	background:url(./images/ba_website.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#bawork6{
+	background:url(./images/One_Destination_desktop.jpg) 50% 50% no-repeat;  background-size:1448px 754px;
+}
+
+#bawork7{
+	background:url(./images/ba_safety_hero.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#bawork8{
+	background:url(./images/ba_safety_poster.jpg) 50% 50% no-repeat;  background-size:1448px 754px;
+}
+
+#bawork9{
+	background:url(./images/ba_safety_poster2.jpg) 50% 50% no-repeat;  background-size:1448px 754px;
+}
+
+#bawork10{
+	background:url(./images/ba_safety_plasma.jpg) 50% 50% no-repeat;  background-size:1448px 754px;
+}
+
+/*--------british_airways_portfolio_END--------*/
+
+
+/*---------O2_portfolio--------*/
+
+#o2work1{
+	background:url(./images/o2_hero.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#o2work2{
+	background:url(./images/O2_app.jpg) 50% 50% no-repeat; background-size: 1448px 754px;
+}
+
+#o2work3{
+	background:url(./images/o2_freedom_plan.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#o2work4{
+	background:url(./images/o2_montage.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#o2work5{
+	background:url(./images/O2_Secondary1.jpg) 50% 50% no-repeat; background-size:cover;
+}
+
+#o2work6{
+	background:url(./images/o2_dm2.jpg) 50% 50% no-repeat; background-size:cover;
+}
+
+/*--------O2_END--------*/
+
+
+/*---------kelloggs_portfolio--------*/
+
+#kelloggswork1{
+	background:url(./images/kelloggs_hero.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#kelloggswork2{
+	background:url(./images/kelloggs_brochure_inner.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#kelloggswork3{
+	background:url(./images/kelloggs_brochure.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#kelloggswork4{
+	background:url(./images/kelloggs_bts.jpg) 50% 50% no-repeat; background-size: 100%; 
+}
+
+#kelloggswork5{
+	background:url(./images/kelloggs_rugby.jpg) 50% 50% no-repeat; background-size:cover;
+}
+
+/*--------kelloggs_END--------*/
+
+
+/*---------loft_portfolio--------*/
+
+#loftwork1{
+	background:url(./images/loft_hero.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#loftwork2{
+	background:url(./images/loft_spread.jpg) 50% 50% no-repeat; background-size: 1448px 754px;
+}
+
+#loftwork3{
+	background:url(./images/loft_site.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#loftwork4{
+	background:url(./images/loft_brand.jpg) 50% 50% no-repeat; background-size: 1448px 754px;
+}
+
+#loftwork5{
+	background:url(./images/loft_brochure.jpg) 50% 50% no-repeat; background-size:  cover;
+}
+
+#loftwork6{
+	background:url(./images/loft_site2.jpg) 50% 50% no-repeat; background-size: 1448px 754px;
+}
+
+/*--------loft_END--------*/
+
+
+
+/*---------access_portfolio--------*/
+
+#accesswork1{
+	background:url(./images/access_hero2.html) 50% 50% no-repeat; background-size: cover;
+}
+
+#accesswork2{
+	background:url(./images/access_cards.html) 50% 50% no-repeat; background-size: 1448px 754px;
+}
+
+#accesswork3{
+	background:url(./images/access_hero.html) 50% 50% no-repeat; background-size: cover;
+}
+
+/*--------access_END--------*/
+
+
+
+/*---------University_of_Edinburgh_portfolio--------*/
+
+#edinwork1{
+	background:url(./images/edinwork1.jpg) center center no-repeat; background-size: cover;
+}
+
+#edinwork2{
+	background:url(./images/edinwork2.jpg) center center no-repeat; background-size: cover;
+}
+
+#edinwork3{
+	background:url(./images/edinwork3.jpg) center center no-repeat; background-size: cover;
+}
+
+#edinwork4{
+	background:url(./images/edinwork4.jpg) center center no-repeat; background-size: cover;
+}
+
+#edinwork5{
+	background:url(./images/edinwork5.jpg) center center no-repeat; background-size: cover;
+}
+
+
+#edinwork6{
+	background:url(./images/edinwork6.jpg) center center no-repeat; background-size: cover;
+}
+
+#edinwork7{
+	background:url(./images/edinwork7.jpg) center center no-repeat; background-size: cover;
+}
+
+#edinwork8{
+	background:url(./images/edinwork8.jpg) center center no-repeat; background-size: cover;
+}
+
+#edinwork9{
+	background:url(./images/edinwork9.jpg) center center no-repeat; background-size: cover;
+}
+
+#edinwork10{
+	background:url(./images/edinwork10.jpg) center center no-repeat; background-size: cover;
+}
+
+#edinwork11{
+	background:url(./images/edinwork11.jpg) center center no-repeat; background-size: cover;
+}
+
+
+/*--------University_of_Edinburgh_END--------*/
+
+
+
+/*---------Wedgewood_portfolio--------*/
+
+#wwwork1{
+	background:url(./images/wwwork1.jpg) center center no-repeat; background-size: cover;
+}
+
+#wwwork2{
+	background:url(./images/wwwork2.jpg) center center no-repeat; background-size: cover;
+}
+
+#wwwork3{
+	background:url(./images/wwwork3.jpg) center center no-repeat; background-size: cover;
+}
+
+#wwwork4{
+	background:url(./images/wwwork4.jpg) center center no-repeat; background-size: cover;
+}
+
+#wwwork5{
+	background:url(./images/wwwork5.jpg) center center no-repeat; background-size: cover;
+}
+
+#wwwork6{
+	background:url(./images/wwwork6.jpg) center center no-repeat; background-size: cover;
+}
+
+#wwwork7{
+	background:url(./images/wwwork7.jpg) center center no-repeat; background-size: cover;
+}
+
+#wwwork8{
+	background:url(./images/wwwork8.jpg) center center no-repeat; background-size: cover;
+}
+
+#wwwork9{
+	background:url(./images/wwwork9.jpg) center center no-repeat; background-size: cover;
+}
+
+#wwwork10{
+	background:url(./images/wwwork10.jpg) center center no-repeat; background-size: cover;
+}
+
+/*--------Wedgewood_END--------*/
+
+
+
+/*---------Compass_portfolio--------*/
+
+#compasswork1{
+	background:url(./images/compass_hero.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#compasswork2{
+	background:url(./images/compass_montage.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+/*---------Compass_END--------*/
+
+
+
+/*---------Willis_portfolio--------*/
+
+#williswork1{
+	background:url(./images/williswire.jpg) 50% 60% no-repeat; background-size: 1448px 754px;
+}
+
+#williswork2{
+	background:url(./images/willisaero1.jpg) 50% 65% no-repeat; background-size: 1448px 754px;
+}
+
+#williswork3{
+	background:url(./images/willisaero2.jpg) 50% 50% no-repeat; background-size: 1448px 754px;
+}
+
+#williswork4{
+	background:url(./images/willisscan.jpg) 50% 50% no-repeat; background-size: 1448px 754px;
+}
+
+/*#williswork5{
+	background:url(./images/willis.jpg) 50% 0 no-repeat; background-size: cover;
+}
+
+#williswork6{
+	background:url(./images/willis.jpg) 50% 0 no-repeat; background-size: cover;
+}*/
+
+
+
+/*--------Willis_END--------*/
+
+/*---------A+DS_portfolio--------*/
+
+#adswork1{
+	background:url(./images/adswork1.jpg) center center no-repeat; background-size: cover;
+}
+
+#adswork2{
+	background:url(./images/adswork2.jpg) center center no-repeat; background-size: cover;
+}
+
+#adswork3{
+	background:url(./images/adswork3.jpg) center center no-repeat; background-size: cover;
+}
+
+#adswork4{
+	background:url(./images/adswork4.jpg) center center no-repeat; background-size: cover;
+}
+
+#adswork5{
+	background:url(./images/adswork5.jpg) center center no-repeat; background-size: cover;
+}
+
+#adswork6{
+	background:url(./images/adswork6.jpg) center center no-repeat; background-size: cover;
+}
+
+#adswork7{
+	background:url(./images/adswork7.jpg) center center no-repeat; background-size: cover;
+}
+
+/*--------A+DS_END--------*/
+
+/*---------Zurich--------*/
+
+#zurichwork1{
+	background:url(./images/zurich1.jpg) 50% 75% no-repeat; background-size: 1448px 754px;
+
+}
+
+#zurichwork2{
+	background:url(./images/zurich2.jpg) 50% 50% no-repeat; background-size:cover;
+}
+
+#zurichwork3{
+	background:url(./images/zurich3.jpg) 50% 50% no-repeat; background-size:1448px 754px;
+}
+
+#zurichwork4{
+	background:url(./images/zurich4.jpg) 50% 50% no-repeat; background-size: 1448px 754px;
+}
+
+#zurichwork5{
+	background:url(./images/zurich5.jpg) 50% 50% no-repeat; background-size: 1448px 754px;
+}
+
+
+/*--------Zurich--------*/
+
+#summary{
+	width: 350px;
+	padding: 15px;
+	border-bottom-width:3px;
+ 	border-bottom-style:solid;
+  	border-bottom-color:#45555F;
+	background-image:url(./images/nav_background.png);
+}
+
+#summarylite{
+	max-width: 350px;
+	width:auto;
+	padding: 15px;
+	border-bottom-width:3px;
+ 	border-bottom-style:solid;
+  	border-bottom-color:#45555F;
+	background-image:url(./images/nav_background_lite.png);
+}
+
+#summarymore{
+	height: 300px;
+	/*width: 350px;*/
+	padding: 15px;
+	border-bottom-width:3px;
+ 	border-bottom-style:solid;
+  	border-bottom-color:#45555F;
+	background-image:url(./images/nav_background.png);
+}
+
+#summaryexpand{
+	width: 350px;
+	padding: 15px;
+	border-bottom-width:3px;
+ 	border-bottom-style:solid;
+  	border-bottom-color:#45555F;
+	background-image:url(./images/nav_background.png);
+}
+
+#membership{
+	padding-top:10px;
+	height:60px;
+}
+
+#membership1{
+	width:230px; 
+	height:70px; 
+	float:left;
+}
+
+#membership2 {
+	width:86px; 
+	height:57px; 
+	float:left;
+}
+
+.title{
+	margin-bottom:10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #6e96b2;
+	/*font: 16px/14px 'BebasRegular', Arial, sans-serif;*/
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: normal;
+	color: #45555F;	
+}
+
+.hometitle{
+	margin:0;
+	/*font: 16px/14px 'BebasRegular', Arial, sans-serif;*/
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	letter-spacing:-1px;
+	font-style: normal;
+	font-weight: bold;
+	color: #45555F;	
+}
+
+.hometitle2{
+	margin-top:0;
+	margin-bottom:10px;
+	/*font: 16px/14px 'BebasRegular', Arial, sans-serif;*/
+	font-family: 'Roboto', sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: normal;
+	color: #45555F;
+	padding-right:20px;
+}
+
+
+.textlead{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;	
+}
+
+.text{
+	margin-top:10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;	
+}
+
+.text2{
+	margin-top:10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: normal;
+	color: #45555F;	
+}
+
+a.viewmore:link{
+	height:30px;
+	margin-top:10px;
+	padding-right:15px;
+	padding-top: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;	
+	background-image:url(./images/viewmore_arrow.png);
+	background-repeat:no-repeat;
+	background-position:right;
+}
+
+a.viewmore:visited {text-decoration: none; color: #000000;}
+a.viewmore:hover {text-decoration: none; color: #6e96b2;}
+a.viewmore:active {text-decoration: none; color: #000000;}
+
+a:link{
+	text-decoration:none;
+	color:#FFF;
+}
+
+a:visited {text-decoration: none; color:#FFF;}
+a:hover {text-decoration: none; color: #FFF;}
+a:active {text-decoration: none; color: #FFF;}
+
+
+#see_more_index_, #see_more_index_1, #see_more_index_2, #see_more_index_3, #see_more_index_4, #see_more_index_5, #see_more_index_6, #see_more_index_7, #see_more_index_8, #see_more_index_9, #see_more_index_10{
+	margin: 10px 0 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;	
+}
+
+#see_more, #see_more1, #see_more2, #see_more3, #see_more4, #see_more5, #see_more6, #see_more7, #see_more8, #see_more9{
+	margin-top:10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;	
+}
+
+#more_text, #more_text1, #more_text2, #more_text3, #more_text4, #more_text5, #more_text6,  #more_text7,  #more_text8,  #more_text9{
+	display:none;
+	width:350px;
+	margin-top:10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;	
+}
+
+.sectionContainer {
+	position: absolute;
+	top: 0px;
+	left: 0px
+	
+	
+}
+
+
+
+
+/*  -----------------------------------------------------------------------------------
+	
+	 Catch Retina based devices
+		
+    -----------------------------------------------------------------------------------*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 1.5dppx) { 
+  
+  /* Retina-specific stuff here */
+	
+}
+
+/*-------------------For Happy New Year Message-----------------------*/
+
+/*@media screen and (min-width: 1500px) {
+#hero{
+	background:url(./images/hero3.jpg) 50% 50% no-repeat;
+	background-size: contain;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+	src='img/home.jpg',
+	sizingMethod='scale');
+}
+}*/
+
+
+
+/*-------------------For Happy New Year Message-----------------------*/
+
+@media screen and (max-width: 1024px) {
+	#bawork3, #bawork6,#bawork8,#bawork9,#bawork10, #o2work2, #work10, #work9,#williswork1, #williswork2, #williswork3, #williswork4,  #loftwork2, #loftwork3, #loftwork4, #loftwork6, #zurichwork1, #zurichwork2, #zurichwork3, #zurichwork4, #zurichwork5{
+		background-size: contain !important;	
+	}
+	.contentConstants {
+		height: 480px !important;
+	}
+	.contentConstantsLine {
+		height: 480px !important;
+	}
+}
+
+/*  -----------------------------------------------------------------------------------
+	
+	 870 px breakpoint ( Browser & iPad portrait)
+		
+    -----------------------------------------------------------------------------------*/
+@media screen and (max-width: 870px) {
+	
+	.hometitle{
+		
+	}
+	#nav{
+		display:none;
+	}
+	.contentConstants {
+		height:600px;	
+	}
+	.contentConstantsLine {
+		height:600px;	
+	}
+	#menu{
+	padding:10px;
+	height:30px;
+	width:100%;
+	background-color:#455560;
+	}
+	/*#footer {
+		bottom: 0;
+		height: 20px;
+		float:left;
+        position:fixed;
+	}
+	#footerImage {
+		float:none;
+		margin-right:0px;
+	}*/
+	#footer img {
+		width:120px;
+		height:15px;
+		margin-top:5px;
+		float:right;
+	}
+	/*#footerButton, #footerSlide {
+		display:block;
+	}
+	#footerText {
+		display:none;	
+	}*/
+	#BufferTop {
+	height:45px; 
+	width:100%;
+	}
+	#container1, #container2, #container3, #container4, #container5, #container6, #container7, #container8, #container9{
+		margin-top:10px;
+	}
+	/*#bawork2{
+		background:url(./images/ba_hero1_tablet.jpg) 50% 0 no-repeat; background-size:cover;
+	}
+	#bawork3{
+		background:url(./images/BA_spread.jpg) 50% 0 no-repeat; background-size:cover;
+	}
+	#bawork4{
+		background:url(./images/ba_hero4_tablet.jpg) 50% 0 no-repeat; background-size:cover;
+	}
+	#bawork5{
+		background:url(./images/ba_hero5_tablet.jpg) 50% 0 no-repeat; background-size:cover;
+	}
+	#bawork6{
+		background:url(./images/One_Destination_tablet.jpg) 50% 0 no-repeat; background-size:cover;
+	}
+	#bawork7{
+		background:url(./images/poster_tablet.jpg) 50% 0 no-repeat; background-size:cover;
+	}
+	#bawork8{
+		background:url(./images/posters_computer_tablet.jpg) 50% 0 no-repeat; background-size:cover;
+	}*/
+	#pens{
+		display:none !important;
+	}
+	
+
+}
+/* iPad portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    html{overflow-x:hidden !important;}
+    #pens,#coffee{display:none}
+	#bawork6,#bawork8,#bawork9{
+		background-size: contain !important;	
+	}
+}
+
+/* iPad landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    html{overflow-x:hidden !important;}
+    #pens,#coffee{display:none}
+    
+    /*#bawork3{
+		background:url(./images/ba_spread_tab.jpg) 50% 0 no-repeat; background-size:460px 323px; background-position:center;
+	}*/
+	#bawork3, #bawork6, #bawork8,#bawork9{
+		background-size: contain !important;	
+	}
+}
+
+/*  -----------------------------------------------------------------------------------
+	
+	 590 px breakpoint
+		
+    -----------------------------------------------------------------------------------*/
+@media only screen and (max-width: 680px) {
+	html{overflow-x:hidden !important;}
+	/*.hometitle{
+		font-size: 42px;
+	}
+  	.hometitle2{
+		font-size: 24px;
+    }*/
+	#nav{
+		display:none;
+	}
+	
+	#logo {
+		position:absolute;
+	}
+	
+	#menu_links{
+		display:none;
+	}
+	
+	#menu{
+		padding:10px;
+		height:30px;
+		width:100%;
+		background-color:#455560;
+	}
+	
+	#hero{
+		height: 750px;
+	}
+	
+	#dropdownButton, #dropdown, #dropdownCover {
+		display:block;
+	}
+	
+	#dropdown a {
+		margin:8px 0px 8px 20px;
+		width:400px;	
+	}
+	
+	.contentConstants {
+		height:400px;	
+	}
+	
+	.contentConstantsLine {
+		height:400px;	
+	}
+	
+	
+	/*#footer {
+		bottom: -1px;
+		height: 20px;
+	}
+	
+	#footerImage {
+		float:none;
+		margin-right:0px;
+	}
+	
+	#footer img {
+		width:120px;
+		height:15px;
+		margin-top:5px;
+	}
+	
+	#footerButton, #footerSlide {
+		display:block;
+	}
+	
+	#footerSlide {
+		font-size:0.7em;
+		height:60px;
+		bottom:-40px;
+	}
+	
+	#footerText {
+		display:none;	
+	}
+	
+	#footerSlideText {
+		width:310px;
+	}*/
+	
+
+	/*#work2{
+		background:url(./images/secondary4_mobile.jpg) 50% 0 no-repeat; background-size: cover;
+	}
+	
+	#bawork2{
+		background:url(./images/ba_hero1_mobile.jpg) 50% 0 no-repeat; background-size:cover; background-position:center;
+	}
+	
+	#bawork3{
+		background:url(./images/ba_spread_mobile.jpg) 50% 0 no-repeat; background-size:460px 323px; background-position:center;
+	}
+	
+	#bawork4{
+		background:url(./images/ba_hero4_mobile.jpg) 50% 0 no-repeat; background-size:cover; background-position:center;
+	}
+	
+	#bawork5{
+		background:url(./images/ba_hero5_mobile.jpg) 50% 0 no-repeat; background-size:cover; background-position:center;
+	}
+
+	#bawork6{
+		background:url(./images/One_Destination_mobile.jpg) 50% 0 no-repeat; background-size:460px 323px; background-position:center;
+	}
+	
+	#bawork7{
+		background:url(./images/poster_mobile.jpg) 50% 0 no-repeat; background-size:cover;
+	}
+	
+	#bawork8{
+		background:url(./images/posters_computer_mobile.jpg) 50% 0 no-repeat; background-size:460px 323px; background-position:center; margin-bottom:20px;
+	}*/
+    
+    .locationhighlight{
+        clear: both;
+        display: block;
+        float: left;
+    }
+
+}
+
+
+/*  -----------------------------------------------------------------------------------
+	
+	 480 px breakpoint (iPhone Landscape and below)
+		
+    -----------------------------------------------------------------------------------*/
+@media only screen and (max-width:480px) {
+    html{overflow-x:hidden !important;}
+	.hometitle{
+		font-size: 35px;
+	}
+	.hometitle2{
+		font-size: 20px;
+	}
+	#hero{
+		background:url(./images/_mobile/hero2.jpg) 50% 0 no-repeat; 
+		background-size:cover;
+		height: 380px;
+	}
+	#menu {
+	    max-height: 30px;
+    }
+    #logo a img{
+        max-height:25px;
+        zoom: 1;
+    }
+	/* Landing page for portfolios */
+	/*#work1{
+		background:url(./images/_mobile/ba_hero2.jpg) 50% 0 no-repeat; background-size:cover;
+	}
+	#work2{
+		background:url(./images/_mobile/o2_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#work3{
+		background:url(./images/_mobile/kelloggs_hero.jpg) 0 50% no-repeat; background-size: cover;
+	}
+	#work4{
+		background:url(./images/_mobile/uni_edin.jpg) 0 50% no-repeat; background-size: cover;
+	}
+	#work5{
+		background:url(./images/_mobile/exhib.jpg) 50% 0 no-repeat; background-size: cover;
+	}
+	#work6{
+		background:url(./images/_mobile/loft_hero.jpg) 50% 0 no-repeat; background-size: cover;
+	}
+	#work7{
+		background:url(./images/wwwork1.jpg) 50% 0 no-repeat; background-size: cover;
+	}
+	#work8{
+		background:url(./images/_mobile/compass_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#work9{
+		background:url(./images/_mobile/access_hero2.jpg) 50% 50% no-repeat; background-size: cover;
+	}*/
+	
+	
+	
+	/* British Airways portfolio */
+	
+	
+	/*#bawork1{
+		background:url(./images/o2_hero) 50% 0 no-repeat; background-size: cover;
+	}
+
+	#bawork2{
+		background:url(./images/ba_spread3.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+
+	#bawork3{
+		background:url(./images/BA_spread.jpg) 50% 50% no-repeat;  background-size: 1448px 754px;
+	}
+
+	#bawork4{
+		background:url(./images/ba_spread2.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+
+	#bawork5{
+		background:url(./images/ba_website.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+
+	#bawork6{
+		background:url(./images/One_Destination_desktop.jpg) 50% 50% no-repeat;  background-size:1448px 754px;
+	}
+
+	#bawork7{
+		background:url(./images/ba_safety_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+
+	#bawork8{
+		background:url(./images/ba_safety_poster.jpg) 50% 50% no-repeat;  background-size:1448px 754px;
+	}
+
+	#bawork9{
+		background:url(./images/ba_safety_poster2.jpg) 50% 50% no-repeat;  background-size:1448px 754px;
+	}
+
+	#bawork10{
+		background:url(./images/ba_safety_plasma.jpg) 50% 50% no-repeat;  background-size:1448px 754px;
+	}*/
+	
+	
+	
+	/* O2 portfolio */
+	/*#o2work1{
+		background:url(./images/_mobile/o2_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#o2work2{
+		background:url(./images/_mobile/O2_app.jpg) 50% 50% no-repeat; background-size: 480px 320px;
+	}
+	#o2work3{
+		background:url(./images/_mobile/o2_freedom_plan.png) 50% 50% no-repeat; background-size: cover;
+	}
+	#o2work4{
+		background:url(./images/_mobile/o2_montage.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#o2work5{
+		background:url(./images/_mobile/O2_Secondary1.jpg) 50% 50% no-repeat; background-size:cover;
+	}
+	#o2work6{
+		background:url(./images/_mobile/o2_dm2.jpg) 50% 50% no-repeat; background-size:cover;
+	}*/
+	
+	
+	
+	/* Kelloggs portfolio */
+	/*#kelloggswork1{
+		background:url(./images/_mobile/kelloggs_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#kelloggswork2{
+		background:url(./images/_mobile/kelloggs_brochure_inner.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#kelloggswork3{
+		background:url(./images/_mobile/kelloggs_brochure.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#kelloggswork4{
+		background:url(./images/_mobile/kelloggs_bts.jpg) 50% 50% no-repeat; background-size: 480px 320px;
+	}
+	#kelloggswork5{
+		background:url(./images/_mobile/kelloggs_rugby.jpg) 50% 0 no-repeat; background-size:cover;
+	}*/
+	
+	
+	
+	/* Loft portfolio */
+	/*#loftwork1{
+		background:url(./images/_mobile/loft_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#loftwork2{
+		background:url(./images/_mobile/loft_spread.jpg) 50% 50% no-repeat; background-size: 480px 320px;
+	}
+	#loftwork3{
+		background:url(./images/_mobile/loft_site.jpg) 50% 50% no-repeat; background-size: 480px 320px;
+	}
+	#loftwork4{
+		background:url(./images/_mobile/loft_brand.png) 50% 50% no-repeat; background-size: 100%;
+	}
+	#loftwork5{
+		background:url(./images/_mobile/loft_brochure.jpg) 50% 50% no-repeat; background-size:  cover;
+	}
+	#loftwork6{
+		background:url(./images/_mobile/loft_site2.jpg) 50% 50% no-repeat; background-size: 480px 320px;
+	}*/
+	
+	
+	
+	/* Access portfolio */	
+	/*#accesswork1{
+		background:url(./images/_mobile/access_hero2.jpg) 50% 50% no-repeat; background-size: cover;
+	}	
+	#accesswork2{
+		background:url(./images/_mobile/access_cards.jpg) 50% 50% no-repeat; background-size: cover;
+	}	
+	#accesswork3{
+		background:url(./images/_mobile/access_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}*/
+	
+	
+	
+	/* University of Edinburgh portfolio */	
+	/*#edinwork1{
+		background:url(./images/_mobile/uni_edin.jpg) 50% 0 no-repeat; background-size: cover;
+	}
+	#edinwork2{
+		background:url(./images/_mobile/edinwork1.jpg) 50% 0 no-repeat; background-size: cover;
+	}
+	#edinwork3{
+		background:url(./images/_mobile/edinwork2.jpg) 50% 0 no-repeat; background-size: cover;
+	}
+	#edinwork4{
+		background:url(./images/_mobile/edinwork3.jpg) 50% 0 no-repeat; background-size: cover;
+	}*/
+	
+	
+	
+	/* Wedgewood portfolio */	
+	/*#wwwork1{
+		background:url(./images/wwwork1.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork2{
+		background:url(./images/wwwork2.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork3{
+		background:url(./images/wwwork3.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork4{
+		background:url(./images/wwwork4.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork5{
+		background:url(./images/wwwork5.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork6{
+		background:url(./images/wwwork6.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork7{
+		background:url(./images/wwwork7.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork8{
+		background:url(./images/wwwork8.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork9{
+		background:url(./images/wwwork9.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork10{
+		background:url(./images/wwwork10.jpg) center center no-repeat; background-size: cover;
+	}*/
+	
+	
+	
+	/* Compass portfolio */	
+	/*#compasswork1{
+		background:url(./images/_mobile/compass_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#compasswork2{
+		background:url(./images/_mobile/compass_montage.jpg) 50% 50% no-repeat; background-size: cover;
+	}*/
+
+	#summary, #summaryexpand, #summarylite{
+		width: auto;
+	}
+	.contentConstantsLine, .contentConstants {
+		height: 230px !important;
+	}
+	#more_text, #more_text1, #more_text2, #more_text3, #more_text4, #more_text5, #more_text6, #more_text7, #more_text8, #more_text9 {
+		width:auto;
+	}
+}
+
+
+
+
+/*  -----------------------------------------------------------------------------------
+	
+	 400 px breakpoint (iPhone)
+		
+    -----------------------------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+	
+	
+	.hometitle{
+		font-size: 22px;
+	}
+	.hometitle2 {
+		font-size:16px;	
+	}
+	.sectionContainer {
+		position:inherit;
+		width:100%;
+	}
+	
+	body {
+		html{overflow-x:hidden !important;
+        *background-size: 100%;
+	}
+  	
+	#nav{
+		display:none;
+	}
+	
+	#logo {
+		position:absolute;
+		margin-left:5px;
+	}
+	
+	#menu{
+	padding:10px;
+	height:30px;
+	width:100%;
+	background-color:#455560;
+	}
+	
+	#menu_links{
+		display:none;
+	}
+	
+	
+	#hero{
+		height: 380px;
+	}
+	
+	#dropdownButton, #dropdown, #dropdownCover {
+		display:block;
+	}
+	
+	#dropdown a {
+		margin:8px 0px 8px 10px;	
+	}
+	
+	/*#work2{
+		background:url(./images/secondary4_mobile.jpg) 50% 0 no-repeat; background-size: cover;
+	}*/
+	
+	#summary{
+		width:auto !important;	
+	}
+	
+	#summarymore, #summaryexpand {
+		padding: 15px 15px 15px 15px;
+		/*width:280px; put on .sectionContainer above */
+		width: auto !important;
+	}
+	#summarylite {
+		width:auto;	
+	}
+	
+	#membership{
+	height:120px;
+	}
+	
+	
+	
+	#more_text, #more_text1, #more_text2, #more_text3, #more_text4, #more_text5, #more_text6 {
+		width:280px;
+	}
+	
+	/*#footer {
+		bottom: -1px;
+		height: 20px;
+		font-size:0.7em;
+	}
+	
+	#footerImage {
+		float:none;
+		margin-right:0px;
+	}
+	
+	#footer img {
+		width:120px;
+		height:15px;
+		margin-top:5px;
+	}
+	
+	#footerButton, #footerSlide {
+		display:block;
+	}
+	
+	#footerSlide {
+		font-size:0.7em;
+		height:60px;
+		bottom:-40px;
+	}
+	
+	#footerText {
+		display:none;	
+	}*/
+	
+	.contentConstants {
+		height:235px;	
+	}
+	
+	.contentConstantsLine {
+		height:235px;	
+	}
+	
+	.sectionContainer {
+		position:inherit;
+	}
+	
+	#bawork2{
+		/*for scaling images background-size:310px 218px*/
+		/*background:url(./images/ba_hero1_mobile.jpg) 50% 0 no-repeat; background-size:cover; background-position:center;*/
+	}
+	
+	#bawork3{
+		/*for static display images background-size:500px 260px*/
+		/*background:url(./images/ba_spread_mobile.jpg) 50% 0 no-repeat; background-size:310px 218px;; background-position:center;*/
+	}
+	
+	#bawork4{
+		/*background:url(./images/ba_hero4_mobile.jpg) 50% 0 no-repeat; background-size:cover; background-position:center;*/
+	}
+	
+	#bawork5{
+		/*background:url(./images/ba_hero5_mobile.jpg) 50% 0 no-repeat; background-size:cover; background-position:center;*/
+	}
+
+	#bawork6{
+		/*background:url(./images/One_Destination_mobile.jpg) 50% 0 no-repeat; background-size:310px 218px; background-position:center;*/
+	}
+	
+	#bawork7{
+		/*background:url(./images/poster_mobile.jpg) 50% 0 no-repeat; background-size:cover;*/
+	}
+	
+	#bawork8{
+		/*background:url(./images/posters_computer_mobile.jpg) 50% 0 no-repeat; background-size:310px 218px; background-position:center; margin-bottom:20px;*/
+	}
+
+}
+
+
+
+
+/*  -----------------------------------------------------------------------------------
+	
+	 MOBILE 320 px breakpoint (iPhone Portrait and below)
+		
+    -----------------------------------------------------------------------------------*/
+@media only screen and (max-width:320px) {
+	.hometitle{
+		font-size: 22px;
+	}ƒ
+	
+	#hero{
+		background:url(./images/_mobile/hero2.jpg) 50% 0 no-repeat; 
+		background-size:175%;
+		height: 236px;
+	}
+	
+	
+	/* Landing page for portfolios */
+	#work1{
+		background:url(./images/_mobile/ba_hero2.jpg) 50% 0 no-repeat; background-size:cover;
+	}
+	#work2{
+		background:url(./images/_mobile/o2_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#work3{
+		background:url(./images/_mobile/kelloggs_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#work4{
+		background:url(./images/_mobile/edinwork1.jpg) center center no-repeat; background-size: cover;
+	}
+	#work5{
+		background:url(./images/_mobile/adswork1.jpg) center center no-repeat; background-size: cover;
+	}
+	#work6{
+		background:url(./images/_mobile/loft_hero.jpg) 50% 0 no-repeat; background-size: cover;
+	}
+	#work7{
+		background:url(./images/wwwork1.jpg) 50% 0 no-repeat; background-size: cover;
+	}
+	#work8{
+		background:url(./images/_mobile/compass_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#work9{
+		background:url(./images/_mobile/zurich1.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	
+	#work10{
+		background:url(./images/_mobile/williswire.jpg) 50% 60% no-repeat; background-size: cover;
+	}
+	
+	
+	
+	/* British Airways portfolio */
+	#bawork1{
+		background:url(./images/_mobile/ba_hero2.jpg) top no-repeat; background-size: cover;
+	}
+	#bawork2{
+		background:url(./images/_mobile/ba_spread3.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#bawork3{
+		background:url(./images/_mobile/ba_spread.jpg) 50% 50% no-repeat;  background-size:100%;
+	}
+	#bawork4{
+		background:url(./images/_mobile/ba_spread2.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#bawork5{
+		background:url(./images/_mobile/ba_website.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#bawork6{
+		background:url(./images/_mobile/One_Destination.jpg) 50% 50% no-repeat;  background-size:100%;
+	}
+	#bawork7{
+		background:url(./images/_mobile/ba_safety_hero.png) 50% 50% no-repeat; background-size: cover;
+	}
+	#bawork8{
+		background:url(./images/_mobile/ba_safety_poster.jpg) 50% 50% no-repeat;  background-size:100%;
+	}
+	#bawork9{
+		background:url(./images/_mobile/ba_safety_poster2.jpg) 50% 50% no-repeat;  background-size:100%;
+	}
+	#bawork10{
+		background:url(./images/_mobile/ba_safety_plasma.jpg) 50% 50% no-repeat;  background-size:100%;
+	}
+	
+	
+	
+	/* O2 portfolio */
+	#o2work1{
+		background:url(./images/_mobile/o2_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#o2work2{
+		background:url(./images/_mobile/O2_app.jpg) 50% 50% no-repeat; background-size: 100%;
+	}
+	#o2work3{
+		background:url(./images/_mobile/o2_freedom_plan.png) 50% 50% no-repeat; background-size: cover;
+	}
+	#o2work4{
+		background:url(./images/_mobile/o2_montage.jpg) 50% 50% no-repeat; background-size: 200%;
+	}
+	#o2work5{
+		background:url(./images/_mobile/O2_Secondary1.jpg) 50% 50% no-repeat; background-size:cover;
+	}
+	#o2work6{
+		background:url(./images/_mobile/o2_dm2.jpg) 50% 50% no-repeat; background-size:cover;
+	}
+	
+	
+	
+	/* Kelloggs portfolio */
+	#kelloggswork1{
+		background:url(./images/_mobile/kelloggs_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#kelloggswork2{
+		background:url(./images/_mobile/kelloggs_brochure_inner.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#kelloggswork3{
+		background:url(./images/_mobile/kelloggs_brochure.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#kelloggswork4{
+		background:url(./images/_mobile/kelloggs_bts.jpg) 50% 50% no-repeat; background-size: 130%;
+	}
+	#kelloggswork5{
+		background:url(./images/_mobile/kelloggs_rugby.jpg) 70% 50% no-repeat; background-size:cover;
+	}
+	
+	
+	
+	/* Loft portfolio */
+	#loftwork1{
+		background:url(./images/_mobile/loft_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#loftwork2{
+		background:url(./images/_mobile/loft_spread.jpg) 50% 50% no-repeat; background-size: 480px 320px;
+	}
+	#loftwork3{
+		background:url(./images/_mobile/loft_site.jpg) 50% 50% no-repeat; background-size: 480px 320px;
+	}
+	#loftwork4{
+		background:url(./images/_mobile/loft_brand.png) 50% 50% no-repeat; background-size: 100%;
+	}
+	#loftwork5{
+		background:url(./images/_mobile/loft_brochure.jpg) 50% 50% no-repeat; background-size:  cover;
+	}
+	#loftwork6{
+		background:url(./images/_mobile/loft_site2.jpg) 50% 50% no-repeat; background-size: 480px 320px;
+	}
+	
+	
+	
+	/* Access portfolio */	
+	/*#accesswork1{
+		background:url(./images/_mobile/access_hero2.jpg) 50% 50% no-repeat; background-size: cover;
+	}	
+	#accesswork2{
+		background:url(./images/_mobile/access_cards.jpg) 50% 50% no-repeat; background-size: cover;
+	}	
+	#accesswork3{
+		background:url(./images/_mobile/access_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}*/
+	
+	
+	
+	/* University of Edinburgh portfolio */	
+	#edinwork1{
+		background:url(./images/_mobile/edinwork1.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#edinwork2{
+		background:url(./images/_mobile/edinwork2.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#edinwork3{
+		background:url(./images/_mobile/edinwork3.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#edinwork4{
+		background:url(./images/_mobile/edinwork4.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#edinwork5{
+		background:url(./images/_mobile/edinwork5.jpg) center center no-repeat; background-size: cover;
+	}
+
+
+	#edinwork6{
+		background:url(./images/_mobile/edinwork6.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#edinwork7{
+		background:url(./images/_mobile/edinwork7.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#edinwork8{
+		background:url(./images/_mobile/edinwork8.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#edinwork9{
+		background:url(./images/_mobile/edinwork9.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#edinwork10{
+		background:url(./images/_mobile/edinwork10.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#edinwork11{
+		background:url(./images/_mobile/edinwork11.jpg) center center no-repeat; background-size: cover;
+	}
+	
+	
+	
+	/* Wedgewood portfolio */	
+	#wwwork1{
+		background:url(./images/_mobile/wwwork1.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork2{
+		background:url(./images/_mobile/wwwork2.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork3{
+		background:url(./images/_mobile/wwwork3.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork4{
+		background:url(./images/_mobile/wwwork4.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork5{
+		background:url(./images/_mobile/wwwork5.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork6{
+		background:url(./images/_mobile/wwwork6.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork7{
+		background:url(./images/_mobile/wwwork7.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork8{
+		background:url(./images/_mobile/wwwork8.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork9{
+		background:url(./images/_mobile/wwwork9.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#wwwork10{
+		background:url(./images/_mobile/wwwork10.jpg) center center no-repeat; background-size: cover;
+	}
+	
+	/*---------A+DS_portfolio--------*/
+
+	#adswork1{
+		background:url(./images/_mobile/adswork1.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#adswork2{
+		background:url(./images/_mobile/adswork2.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#adswork3{
+		background:url(./images/_mobile/adswork3.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#adswork4{
+		background:url(./images/_mobile/adswork4.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#adswork5{
+		background:url(./images/_mobile/adswork5.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#adswork6{
+		background:url(./images/_mobile/adswork6.jpg) center center no-repeat; background-size: cover;
+	}
+
+	#adswork7{
+		background:url(./images/_mobile/adswork7.jpg) center center no-repeat; background-size: cover;
+	}
+	
+	/* Compass portfolio */	
+	#compasswork1{
+		background:url(./images/_mobile/compass_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	#compasswork2{
+		background:url(./images/_mobile/compass_montage.jpg) 50% 50% no-repeat; background-size: 200%;
+	}
+	
+	/*---------Willis_portfolio--------*/
+
+	#williswork1{
+		background:url(./images/_mobile/williswire.jpg) 50% 60% no-repeat; background-size: cover;
+	}
+
+	#williswork2{
+		background:url(./images/_mobile/willisaero1.jpg) 50% 65% no-repeat; background-size: cover;
+	}
+
+	#williswork3{
+		background:url(./images/_mobile/willisaero2.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+
+	#williswork4{
+		background:url(./images/_mobile/willisscan.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+	
+	/*---------loft_portfolio--------*/
+	
+	#loftwork1{
+		background:url(./images/_mobile/loft_hero.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+
+	#loftwork2{
+		background:url(./images/_mobile/loft_spread.jpg) 50% 50% no-repeat; background-size:  cover;
+	}
+
+	#loftwork3{
+		background:url(./images/_mobile/loft_site.jpg) 50% 50% no-repeat; background-size: cover;
+	}
+
+	#loftwork4{
+		background:url(./images/_mobile/loft_brand.jpg) 50% 50% no-repeat; background-size:  cover;
+	}
+
+	#loftwork5{
+		background:url(./images/_mobile/loft_brochure.jpg) 50% 50% no-repeat; background-size:  cover;
+	}
+
+	#loftwork6{
+		background:url(./images/_mobile/loft_site2.jpg) 50% 50% no-repeat; background-size:  cover;
+	}
+	
+	
+	
+	/*---------Zurich--------*/
+
+#zurichwork1{
+	background:url(./images/_mobile/zurich1.jpg) 50% 65% no-repeat; background-size:cover;
+
+}
+
+#zurichwork2{
+	background:url(./images/_mobile/zurich2.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#zurichwork3{
+	background:url(./images/_mobile/zurich3.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#zurichwork4{
+	background:url(./images/_mobile/zurich4.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+#zurichwork5{
+	background:url(./images/_mobile/zurich5.jpg) 50% 50% no-repeat; background-size: cover;
+}
+
+
+
+	.contentConstants {
+		height: 220px !important;
+	}
+	
+	.contentConstantsLine {
+		height: 220px !important;
+	}
+	
+}
