@@ -13,4 +13,10 @@ pw:    <empty>
 
 Julio usa un user y pw diferente
 
+Julio
 
+db user: jb
+db pwd: cometaG
+
+wp user:admin
+wp pwd: cometaG
