@@ -16,25 +16,15 @@
     <div id="container">
         <!--Header Including Responsive Menus------------------------------------------------------------------------->
         <div id='header'>
-            <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_id' => 'dropdown')); ?>
+            
             <div id="menu">
-                <div id="dropdown">
-                    <a class="menubtn_active" href="#">View Work</a>
-                    <a class="menubtn_inactive" href="about.html" target="_self">About</a>
-                    <a class="menubtn_inactive" href="contact.html" target="_self">Contact</a>
-                    <a class="menubtn_inactive" href="global_network.html" target="_self">Global Network</a>
-                    <a class="menubtn_inactive" href="http://www.rrdcreative.com/thefridayfiveproject/" target="_self">Blog</a>
-                </div> 
+                
+               <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_id' => 'dropdown')); ?>
                 <div id="dropdownCover"></div>
                 <div id="dropdownButton"></div>
                 <div id="logo"><a href="index.html"><img src="images/rrdcreative_id.png" width="156" height="25" alt="rrdcreative"></a></div>
-                <div id='menu_links'>	
-                    <a class="menubtn_active" href="#">View Work</a>
-                    <a class="menubtn_inactive" href="about.html" target="_self">About</a>
-                    <a class="menubtn_inactive" href="contact.html" target="_self">Contact</a>
-                    <a class="menubtn_inactive" href="global_network.html" target="_self">Global Network</a>
-                    <a class="menubtn_inactive" href="http://www.rrdcreative.com/thefridayfiveproject/" target="_self">Blog</a>
-                </div>
+                <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_id' => 'menu_links')); ?>
+  
             </div>
             <div id="nav">
                 <a href="#hero">
