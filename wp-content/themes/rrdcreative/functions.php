@@ -1,4 +1,5 @@
 <?php
+        show_admin_bar( false );
 	// enables wigitized sidebars
 	if ( function_exists('register_sidebar') )
 

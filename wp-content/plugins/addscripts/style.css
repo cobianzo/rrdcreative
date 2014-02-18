@@ -289,54 +289,11 @@ li.current-menu-item a{
 /* Index Sections */
 
 #hero{
-	background:url(./images/hero3.jpg) 50% 50% no-repeat;
 	background-size: cover;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
 	src='img/home.html',
 	sizingMethod='scale');
 }
-
-#work1{
-	background:url(./images/ba_hero2.jpg) 50% 0 no-repeat; background-size: cover;
-}
-
-#work2{
-	background:url(./images/o2_hero.jpg) 50% 50% no-repeat; background-size: cover;
-}
-
-#work3{
-	background:url(./images/kelloggs_hero.jpg) 0 50% no-repeat; background-size: cover;
-}
-
-#work4{
-	background:url(./images/edinwork1.jpg) 0 50% no-repeat; background-size: cover;
-}
-
-#work5{
-	background:url(./images/adswork1.jpg) 50% 50% no-repeat; background-size: cover;
-}
-
-#work6{
-	background:url(./images/loft_hero.jpg) 50% 0 no-repeat; background-size: cover;
-}
-
-#work7{
-	background:url(./images/wwwork1.jpg) 50% 0 no-repeat; background-size: cover;
-}
-
-#work8{
-	background:url(./images/compass_hero.jpg) 50% 50% no-repeat; background-size: cover;
-}
-
-#work9{
-	background:url(./images/zurich1.jpg) 50% 65% no-repeat; background-size: 1448px 754px;
-}
-
-#work10{
-	background:url(./images/williswire.jpg) 50% 60% no-repeat; background-size: 1448px 754px;
-}
-
-
 
 /*---------british_airways_portfolio--------*/
 
@@ -794,6 +751,9 @@ li.current-menu-item a{
 	color: #000000;	
 }
 
+.text div{
+    margin-bottom: 10px;
+}
 .text2{
 	margin-top:10px;
 	font-family: Arial, Helvetica, sans-serif;
