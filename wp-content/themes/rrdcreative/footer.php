@@ -12,7 +12,7 @@
 <div id="footer" class="footertext">
     
     <div id="footerImage">
-        <img src="images/rrd_logo.png" width="176" height="22">
+        <img src="<?php bloginfo('template_url');?>/images/rrd_logo.png" width="176" height="22">
     </div>
     <div id="footerButton"></div>
 </div>

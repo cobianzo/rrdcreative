@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
 		
         	$('#content-dropdown1').animate({'marginTop':  0}, 1000);
 			
-			$('#about-wrapper').css({"background":"url(images/about/about_bg_cover.jpg) 50% 0% no-repeat"});
+			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg_cover.jpg) 50% 0% no-repeat"});
 			$("#about-btn1").hide();
 			$("#about-btn2").hide();
 			$("#about-btn3").hide();
@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
 		
         	$('#content-dropdown1').animate({'marginTop':  -1200}, 1000);
 			
-			$('#about-wrapper').css({"background":"url(images/about/about_bg.jpg) 50% 0% no-repeat"});
+			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg.jpg) 50% 0% no-repeat"});
 			$("#about-btn1").show();
 			$("#about-btn2").show();
 			$("#about-btn3").show();
@@ -57,7 +57,7 @@ jQuery(document).ready(function($) {
 		
         	$('#content-dropdown2').animate({'marginTop':  0}, 1000);
 			
-			$('#about-wrapper').css({"background":"url(images/about/about_bg_cover.jpg) 50% 0% no-repeat"});
+			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg_cover.jpg) 50% 0% no-repeat"});
 			$("#about-btn1").hide();
 			$("#about-btn2").hide();
 			$("#about-btn3").hide();
@@ -67,7 +67,7 @@ jQuery(document).ready(function($) {
 		
         	$('#content-dropdown2').animate({'marginTop':  -1200}, 1000);
 			
-			$('#about-wrapper').css({"background":"url(images/about/about_bg.jpg) 50% 0% no-repeat"});
+			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg.jpg) 50% 0% no-repeat"});
 			$("#about-btn1").show();
 			$("#about-btn2").show();
 			$("#about-btn3").show();
@@ -79,7 +79,7 @@ jQuery(document).ready(function($) {
 		
         	$('#content-dropdown3').animate({'marginTop':  0}, 1000);
 			
-			$('#about-wrapper').css({"background":"url(images/about/about_bg_cover.jpg) 50% 0% no-repeat"});
+			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg_cover.jpg) 50% 0% no-repeat"});
 			$("#about-btn1").hide();
 			$("#about-btn2").hide();
 			$("#about-btn3").hide();
@@ -89,7 +89,7 @@ jQuery(document).ready(function($) {
 		
         	$('#content-dropdown3').animate({'marginTop':  -1200}, 1000);
 			
-			$('#about-wrapper').css({"background":"url(images/about/about_bg.jpg) 50% 0% no-repeat"});
+			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg.jpg) 50% 0% no-repeat"});
 			$("#about-btn1").show();
 			$("#about-btn2").show();
 			$("#about-btn3").show();
@@ -160,7 +160,7 @@ jQuery(document).ready(function($) {
 			alert(section1);
 			if(Boolean("section" + currentSection) == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 			}
 		});*/
 		
@@ -170,12 +170,12 @@ jQuery(document).ready(function($) {
 			
 			if(section1 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section1 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section1 = false;
 			}
 		});
@@ -186,12 +186,12 @@ jQuery(document).ready(function($) {
 			
 			if(section2 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section2 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section2 = false;
 			}
 		});
@@ -202,12 +202,12 @@ jQuery(document).ready(function($) {
 			
 			if(section3 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section3 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section3 = false;
 			}
 		});
@@ -218,12 +218,12 @@ jQuery(document).ready(function($) {
 			
 			if(section4 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section4 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section4 = false;
 			}
 		});
@@ -234,12 +234,12 @@ jQuery(document).ready(function($) {
 			
 			if(section5 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section5 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section5 = false;
 			}
 		});
@@ -250,12 +250,12 @@ jQuery(document).ready(function($) {
 			
 			if(section6 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section6 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section6 = false;
 			}
 		});
@@ -266,12 +266,12 @@ jQuery(document).ready(function($) {
 			
 			if(section7 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section7 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section7 = false;
 			}
 		});
@@ -282,12 +282,12 @@ jQuery(document).ready(function($) {
 			
 			if(section8 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section8 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section8 = false;
 			}
 		});
@@ -298,12 +298,12 @@ jQuery(document).ready(function($) {
 			
 			if(section9 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section9 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section9 = false;
 			}
 		});
@@ -314,12 +314,12 @@ jQuery(document).ready(function($) {
 			
 			if(section10 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section10 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section10 = false;
 			}
 		});
@@ -335,18 +335,18 @@ jQuery(document).ready(function($) {
 		$("#more_text" + currentSection).slideToggle("fast");
 	});*/
 	
-	$("#see_more").click(function () {
+	$("#see_more1").click(function () {
 			
-			$("#more_text").slideToggle("fast");
+			$("#more_text1").slideToggle("fast");
 			
 			if(section1 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section1 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section1 = false;
 			}
 		});
@@ -357,12 +357,12 @@ jQuery(document).ready(function($) {
 			
 			if(section2 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section2 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section2 = false;
 			}
 		});
@@ -373,12 +373,12 @@ jQuery(document).ready(function($) {
 			
 			if(section3 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section3 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section3 = false;
 			}
 		});
@@ -389,12 +389,12 @@ jQuery(document).ready(function($) {
 			
 			if(section4 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section4 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section4 = false;
 			}
 		});
@@ -405,12 +405,12 @@ jQuery(document).ready(function($) {
 			
 			if(section5 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section5 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section5 = false;
 			}
 		});
@@ -421,12 +421,12 @@ jQuery(document).ready(function($) {
 			
 			if(section6 == false)
 			{
-				$(this).html("Read Less <img src=images/readmore_arrow_up.png>" );
+				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
 				section6 = true;
 			}
 			else
 			{
-				$(this).html("Read More <img src=images/readmore_arrow.png>" );
+				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
 				section6 = false;
 			}
 		});
@@ -527,11 +527,11 @@ jQuery(document).ready(function($) {
 		 */
 		function refreshMap(){
 			closeOpenMarkers();			
-			edinburghMarker.setIcon('images/contact/edinburgh-label.png');
+			edinburghMarker.setIcon('http://www.rrdcreative.com/images/contact/edinburgh-label.png');
 			edinburghMarker.setPosition(new google.maps.LatLng(55.944788, -3.206841));
-			dublinMarker.setIcon('images/contact/dublin-label.png');
+			dublinMarker.setIcon('http://www.rrdcreative.com/images/contact/dublin-label.png');
 			dublinMarker.setPosition(new google.maps.LatLng(53.309448, -6.256599));
-			londonMarker.setIcon('images/contact/london-label.png');
+			londonMarker.setIcon('http://www.rrdcreative.com/images/contact/london-label.png');
 			londonMarker.setPosition(new google.maps.LatLng(51.512773, -0.084243));
 			mapPlaceHolder.setZoom(5); 
 			mapPlaceHolder.setCenter(new google.maps.LatLng(54.865486, -4.1359));
@@ -576,10 +576,10 @@ jQuery(document).ready(function($) {
 			edinburghMarker 		= 	new google.maps.Marker({
                                             position	: 	new google.maps.LatLng(55.944788, -3.206841),
                                             map			:	mapPlaceHolder,
-                                            icon		:	'images/contact/edinburgh-label.png',
+                                            icon		:	'http://www.rrdcreative.com/images/contact/edinburgh-label.png',
                                         });
 			edinburghString 		= 	"<div class='map-information' style='width:207px !important'>" +
-											"<p><img src='images/branding/rrd-creative-logo.png' alt='RRD Creative'>" + 
+											"<p><img src='http://www.rrdcreative.com/images/branding/rrd-creative-logo.png' alt='RRD Creative'>" + 
 											"<br><strong>Edinburgh</strong></p>" +
 										  	"<p>Exchange Place 2" +
 											"<br>5 Semple Street" +
@@ -593,10 +593,10 @@ jQuery(document).ready(function($) {
 			dublinMarker 			= 	new google.maps.Marker({
                                             position	: 	new google.maps.LatLng(53.309448, -6.256599),
                                             map			:	mapPlaceHolder,
-                                            icon		:	'images/contact/dublin-label.png'
+                                            icon		:	'http://www.rrdcreative.com/images/contact/dublin-label.png'
                                         });
 			dublinString 			= 	"<div class='map-information' style='width:207px !important'>" +
-											"<p><img src='images/branding/rrd-creative-logo.png' alt='RRD Creative'>" + 
+											"<p><img src='http://www.rrdcreative.com/images/branding/rrd-creative-logo.png' alt='RRD Creative'>" + 
 											"<br><strong>Dublin</strong></p>" +
 										  	"<p>Unit 6b" +
 											"<br>Westgate Business Park" +
@@ -611,10 +611,10 @@ jQuery(document).ready(function($) {
 			londonMarker 			= 	new google.maps.Marker({
                                             position	: 	new google.maps.LatLng(51.512773, -0.084243),
                                             map			:	mapPlaceHolder,
-                                            icon		:	'images/contact/london-label.png'
+                                            icon		:	'http://www.rrdcreative.com/images/contact/london-label.png'
                                         });
 			londonString 			= 	"<div class='map-information' style='width:207px !important'>" +
-											"<p><img src='images/branding/rrd-creative-logo.png' alt='RRD Creative'>" + 
+											"<p><img src='http://www.rrdcreative.com/images/branding/rrd-creative-logo.png' alt='RRD Creative'>" + 
 											"<br><strong>London</strong></p>" +
 										  	"<p>85 Gracechurch Street" +
 											"<br>London EC3V 0AA</p>" +

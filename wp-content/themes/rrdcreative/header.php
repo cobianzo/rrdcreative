@@ -22,7 +22,7 @@
                <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_id' => 'dropdown')); ?>
                 <div id="dropdownCover"></div>
                 <div id="dropdownButton"></div>
-                <div id="logo"><a href="index.html"><img src="images/rrdcreative_id.png" width="156" height="25" alt="rrdcreative"></a></div>
+                <div id="logo"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url');?>/images/rrdcreative_id.png" width="156" height="25" alt="<?php bloginfo('name'); ?>"></a></div>
                 <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_id' => 'menu_links')); ?>
             </div>
 

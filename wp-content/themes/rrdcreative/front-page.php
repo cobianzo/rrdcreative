@@ -3,7 +3,7 @@
         <a href="#hero">
         <div id="btn" style="background-image: url(<?php bloginfo('template_url');?>/images/return_background.png);">Some of our clients:</div></a>
         <?php 
-            $args = array( 'post_parent' => '0', 'post_type' => 'clients', 'posts_per_page' => 10, 'orderby' => 'menu_order', 'order' => 'ASC');
+            $args = array( 'post_parent' => '0', 'post_type' => 'clients', 'orderby' => 'menu_order', 'order' => 'ASC');
 
             $loop = new WP_Query( $args );
 
