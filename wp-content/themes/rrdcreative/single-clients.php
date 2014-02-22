@@ -39,7 +39,9 @@
         <div style="position:relative;">
         <div class="sectionContainer">
             <div id="summaryexpand">
-                <div class="title"><?php echo $client_title; ?></div>
+                <?php if ($i == 1) { ?>
+                    <div class="title"><?php echo $client_title; ?></div>
+                 <?php };?>   
                 <div class="textlead"><?php the_title(); ?></div>
                 <div id="see_more<?php echo $i;?>">
                     Read More <img src="<?php bloginfo('template_url');?>/images/readmore_arrow.png" width="13" height="7" alt="read more">
