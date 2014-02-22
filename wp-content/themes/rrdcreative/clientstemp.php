@@ -11,10 +11,12 @@
             $loop = new WP_Query( $args );
 
             $i=1;  
-            while ( $loop->have_posts() ) : $loop->the_post();
-                echo '<a href="#work'.$i.'"><div id="btn">';        
-                the_title();
-                echo '</div></a>'; 
+            while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <a href="#work<?php echo $i; ?>" onclick="">
+                <div id="btn">
+	                <?php the_title(); ?>
+                </div></a>'; <?php
+                
                 $i++;
             endwhile;
             wp_reset_postdata();
@@ -24,7 +26,7 @@
 
     </div>	
 </div>   
-<!--Buffer Top------------------------------------------------------------------------->
+<!--Buffer Top ***************************************************************************** -->
 <div id="BufferTop"></div>
 
     <div style="position:relative">
