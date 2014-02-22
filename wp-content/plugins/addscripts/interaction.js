@@ -133,307 +133,71 @@ jQuery(document).ready(function($) {
 	
 	//Show/hide text on index
 	
-	var section1 = false;
-	var section2 = false;
-	var section3 = false;
-	var section4 = false;
-	var section5 = false;
-	var section6 = false;
-	var section7 = false;
-	var section8 = false;
-	var section9 = false;
-	var section10 = false;
-	
+        var count_index = $('[id^=see_more_index_]').length;
+       
+        var section = [];
+        for ( var i = 1; i <= count_index; i = i + 1 ) {
+            section[i] = false;
+        }
+                
 	var booleanHolder;
+	$('[id^=see_more_index_]').css("cursor" , "pointer"); 
 	
-	$("#see_more_index_1, #see_more_index_2, #see_more_index_3, #see_more_index_4, #see_more_index_5, #see_more_index_6, #see_more_index_7, #see_more_index_8, #see_more_index_9, #see_more_index_10").css("cursor" , "pointer");
+        //$("#see_more_index_1, #see_more_index_2, #see_more_index_3, #see_more_index_4, #see_more_index_5, #see_more_index_6, #see_more_index_7, #see_more_index_8, #see_more_index_9, #see_more_index_10").css("cursor" , "pointer");
 	
 	if (document.documentElement.clientWidth <= 1024 && document.documentElement.clientWidth > 0) {
     
-		$("#see_more_index_1 , #see_more_index_2, #see_more_index_3, #see_more_index_4, #see_more_index_5, #see_more_index_6, #see_more_index_7, #see_more_index_8, #see_more_index_9, #see_more_index_10").css("display" , "block");
+                $('[id^=see_more_index_]').css("display" , "block");
 		
-		$("#container1, #container2, #container3, #container4, #container5, #container6, #container7, #container8, #container9, #container10").css("display" , "none");
-	
-		/*$("#see_more_index_1, #see_more_index_2, #see_more_index_3, #see_more_index_4, #see_more_index_5, #see_more_index_6, #see_more_index_7, #see_more_index_8").click(function () {
-			currentSection = this.id.substring(15,17);
-			$("#container" + currentSection).slideToggle("fast");
-			alert(section1);
-			if(Boolean("section" + currentSection) == false)
+                $('[id^=container]').css("display" , "none");
+		
+                for ( var i = 1; i <= count_index; i = i + 1 ) {
+                    $("#see_more_index_" + i).click(function () {
+                        
+                        var index = $(this).attr('id').replace("see_more_index_","");
+			
+			$("#container" + index).slideToggle("fast");
+			
+			if(section[index] === false)
 			{
 				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-			}
-		});*/
-		
-		$("#see_more_index_1").click(function () {
-			
-			$("#container1").slideToggle("fast");
-			
-			if(section1 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section1 = true;
+				section[imdex] = true;
 			}
 			else
 			{
 				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section1 = false;
+				section[i] = false;
 			}
-		});
-		
-		$("#see_more_index_2").click(function () {
-			
-			$("#container2").slideToggle("fast");
-			
-			if(section2 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section2 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section2 = false;
-			}
-		});
-		
-		$("#see_more_index_3").click(function () {
-			
-			$("#container3").slideToggle("fast");
-			
-			if(section3 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section3 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section3 = false;
-			}
-		});
-		
-		$("#see_more_index_4").click(function () {
-			
-			$("#container4").slideToggle("fast");
-			
-			if(section4 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section4 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section4 = false;
-			}
-		});
-		
-		$("#see_more_index_5").click(function () {
-			
-			$("#container5").slideToggle("fast");
-			
-			if(section5 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section5 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section5 = false;
-			}
-		});
-		
-		$("#see_more_index_6").click(function () {
-			
-			$("#container6").slideToggle("fast");
-			
-			if(section6 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section6 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section6 = false;
-			}
-		});
-		
-		$("#see_more_index_7").click(function () {
-			
-			$("#container7").slideToggle("fast");
-			
-			if(section7 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section7 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section7 = false;
-			}
-		});
-		
-		$("#see_more_index_8").click(function () {
-			
-			$("#container8").slideToggle("fast");
-			
-			if(section8 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section8 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section8 = false;
-			}
-		});
-		
-		$("#see_more_index_9").click(function () {
-			
-			$("#container9").slideToggle("fast");
-			
-			if(section9 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section9 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section9 = false;
-			}
-		});
-		
-		$("#see_more_index_10").click(function () {
-			
-			$("#container10").slideToggle("fast");
-			
-			if(section10 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section10 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section10 = false;
-			}
-		});
-	
+                    });
+                }                
 	}
 	
 	//Show/hide text on client pages
-	
-	$("#see_more, #see_more1, #see_more2, #see_more3, #see_more4, #see_more5, #see_more6").css("cursor" , "pointer");
-	
-	/*$("#see_more, #see_more1, #see_more2, #see_more3, #see_more4").click(function () {
-		currentSection = this.id.substring(8,10);
-		$("#more_text" + currentSection).slideToggle("fast");
-	});*/
-	
-	$("#see_more1").click(function () {
-			
-			$("#more_text1").slideToggle("fast");
-			
-			if(section1 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section1 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section1 = false;
-			}
-		});
-		
-		$("#see_more2").click(function () {
-			
-			$("#more_text2").slideToggle("fast");
-			
-			if(section2 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section2 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section2 = false;
-			}
-		});
-		
-		$("#see_more3").click(function () {
-			
-			$("#more_text3").slideToggle("fast");
-			
-			if(section3 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section3 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section3 = false;
-			}
-		});
-		
-		$("#see_more4").click(function () {
-			
-			$("#more_text4").slideToggle("fast");
-			
-			if(section4 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section4 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section4 = false;
-			}
-		});
-		
-		$("#see_more5").click(function () {
-			
-			$("#more_text5").slideToggle("fast");
-			
-			if(section5 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section5 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section5 = false;
-			}
-		});
-		
-		$("#see_more6").click(function () {
-			
-			$("#more_text6").slideToggle("fast");
-			
-			if(section6 == false)
-			{
-				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section6 = true;
-			}
-			else
-			{
-				$(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
-				section6 = false;
-			}
-		});
-		
-		
-		
-		
+        var count_more = $('[id^=see_more]').length;
+        var section_more = [];
+            for ( var i = 1; i <= count_more; i = i + 1 ) {
+                section_more[i] = false;
+            }
+                
+	$('[id^=see_more]').css("cursor" , "pointer"); 
+        
+        for ( var i = 1; i <= count_more; i = i + 1 ) {
+            $("#see_more" + i).click(function () {
+                var index = $(this).attr('id').replace("see_more","");
+                $("#more_text"+index).slideToggle("fast");
+                if(section_more[index] === false)
+                {
+
+                        $(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
+                        section_more[index] = true;
+                }
+                else
+                {
+                        $(this).html("Read More <img src=http://www.rrdcreative.com/images/readmore_arrow.png>" );
+                        section_more[index] = false;
+                }
+            });
+        }             
 		
 		
 		/* ---------------------------------------------------------------------------------
