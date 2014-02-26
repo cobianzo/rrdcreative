@@ -11,6 +11,8 @@ Author URI: http://cobianzo.com/
 function rddcreative_styles(){
     wp_register_style('rddcreative_stylesheet', plugins_url('style.css', __FILE__));  
     wp_enqueue_style('rddcreative_stylesheet');
+    wp_register_style('about_css', plugins_url('about.css', __FILE__));  
+    wp_enqueue_style('about_css');
     wp_register_style('Roboto', 'http://fonts.googleapis.com/css?family=Roboto');  
     wp_enqueue_style('Roboto');  
 }

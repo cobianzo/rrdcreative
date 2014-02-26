@@ -27,79 +27,24 @@ jQuery(document).ready(function($) {
 	//Dropdown content menus 
 	
 	
+	$('div[id^="about-btn"]').click(function(e) {
+             var index = $(this).attr('id').replace("about-btn","");
+            
+             $('#content-dropdown' + index).animate({'marginTop':  0}, 1000);
+             $('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg_cover.jpg) 50% 0% no-repeat"});
+             $('div[id^="about-btn"]').hide();
+        });
 	
 	
-	// btn1
-	$('#about-btn1').click(function(e) { 
-		
-        	$('#content-dropdown1').animate({'marginTop':  0}, 1000);
-			
-			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg_cover.jpg) 50% 0% no-repeat"});
-			$("#about-btn1").hide();
-			$("#about-btn2").hide();
-			$("#about-btn3").hide();
-		
-	});
-	
-	$('#content-dropdown1-closebtn').click(function(e) { 
-		
-        	$('#content-dropdown1').animate({'marginTop':  -1200}, 1000);
+	$('div[id^="content-dropdown-closebtn"]').click(function(e) { 
+		var index = $(this).attr('id').replace("content-dropdown-closebtn","");
+                
+        	$('#content-dropdown' + index).animate({'marginTop':  -1200}, 1000);
 			
 			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg.jpg) 50% 0% no-repeat"});
-			$("#about-btn1").show();
-			$("#about-btn2").show();
-			$("#about-btn3").show();
-		
+			$('div[id^="about-btn"]').show();
 	});
-	
-	// btn2
-	$('#about-btn2').click(function(e) { 
-		
-        	$('#content-dropdown2').animate({'marginTop':  0}, 1000);
-			
-			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg_cover.jpg) 50% 0% no-repeat"});
-			$("#about-btn1").hide();
-			$("#about-btn2").hide();
-			$("#about-btn3").hide();
-	});
-	
-	$('#content-dropdown2-closebtn').click(function(e) { 
-		
-        	$('#content-dropdown2').animate({'marginTop':  -1200}, 1000);
-			
-			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg.jpg) 50% 0% no-repeat"});
-			$("#about-btn1").show();
-			$("#about-btn2").show();
-			$("#about-btn3").show();
-	});
-	
-	
-	// btn3
-	$('#about-btn3').click(function(e) { 
-		
-        	$('#content-dropdown3').animate({'marginTop':  0}, 1000);
-			
-			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg_cover.jpg) 50% 0% no-repeat"});
-			$("#about-btn1").hide();
-			$("#about-btn2").hide();
-			$("#about-btn3").hide();
-	});
-	
-	$('#content-dropdown3-closebtn').click(function(e) { 
-		
-        	$('#content-dropdown3').animate({'marginTop':  -1200}, 1000);
-			
-			$('#about-wrapper').css({"background":"url(http://www.rrdcreative.com/images/about/about_bg.jpg) 50% 0% no-repeat"});
-			$("#about-btn1").show();
-			$("#about-btn2").show();
-			$("#about-btn3").show();
-	});
-	
-	
-	
-	
-	
-	
+				
 	//Dropdown menus
 	$('#dropdownButton').click(function(e) { 
 		if(dropdownActive == false){
@@ -149,19 +94,19 @@ jQuery(document).ready(function($) {
     
                 $('[id^=see_more_index_]').css("display" , "block");
 		
-                $('[id^=container]').css("display" , "none");
+                $('[id^=read-container]').css("display" , "none");
 		
                 for ( var i = 1; i <= count_index; i = i + 1 ) {
                     $("#see_more_index_" + i).click(function () {
                         
                         var index = $(this).attr('id').replace("see_more_index_","");
 			
-			$("#container" + index).slideToggle("fast");
+			$("#read-container" + index).slideToggle("fast");
 			
 			if(section[index] === false)
 			{
 				$(this).html("Read Less <img src=http://www.rrdcreative.com/images/readmore_arrow_up.png>" );
-				section[imdex] = true;
+				section[index] = true;
 			}
 			else
 			{

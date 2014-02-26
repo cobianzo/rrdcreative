@@ -751,6 +751,9 @@ li.current-menu-item a{
 	color: #000000;	
 }
 
+
+
+
 .text div{
     margin-bottom: 10px;
 }
@@ -1906,4 +1909,5 @@ and (orientation : landscape) {
 		height: 220px !important;
 	}
 	
+}
 }

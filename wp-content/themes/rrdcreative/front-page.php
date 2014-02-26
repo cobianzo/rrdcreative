@@ -50,7 +50,7 @@
                     Read More <img src="<?php bloginfo('template_url'); ?>/images/readmore_arrow.png" width="13" height="7" alt="read more">
                 </div>
                 <?php 
-                    echo '<div id="container'.$i.'">';
+                    echo '<div id="read-container'.$i.'">';
                     ?>
                 <div class="text"><?php the_field('content'); ?></div>      
                 <div class="text">

@@ -1,0 +1,377 @@
+#about-wrapper {
+	position:absolute;
+	margin-top:40px;
+	width:100%;
+	height:1500px;
+	
+	
+	background:url(./images/about_bg.jpg) 50% 0% no-repeat;
+	
+	background-height:100%;
+
+	/*overflow:hidden;*/
+}
+
+
+#about-wrapper-cover {
+
+	position:absolute;
+	width:100%;
+	height:1500px;
+	
+}
+
+
+#about-wrapper-btn {
+	margin: 246px auto 0px auto;
+	width:928px;
+	height:1024px;
+	
+	
+
+	/*overflow:hidden;*/
+}
+
+.content-dropdown {
+	display:block;
+	position:absolute;
+	margin-top:-1200px;
+	
+	
+}
+
+.box_container {
+	display:block;
+	background-color:#ffffff;
+	position:absolute;
+	padding:10px 20px 20px 20px;
+	
+}
+
+.close_btn{
+    position:absolute;
+    width:auto;
+    text-align:right;
+    cursor:pointer;
+    margin-top: 7px;  
+}
+
+.about-btn {
+    position:absolute;
+    width: 310px;
+    height: 256px;
+    cursor:pointer;
+}
+
+.content_box p, .content_box div, .responsive_box p, .responsive_box div {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom:10px;
+    
+}
+
+.content_box p img, .content_box div img {
+    padding: 5px 0px 0 0px;
+    vertical-align: top;
+    margin: 6px 1% 5px 1%;
+    
+}
+
+.responsive_box p img, .responsive_box div img {
+    padding: 5px 0px 0 0px;
+    vertical-align: top;
+    margin: 6px 1% 5px 1%;  
+}
+
+.responsive_box ul {
+    width: 100%;
+    padding: 5px 0; 
+    list-style: none;
+}
+
+.responsive_box ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
+    margin: 0 0 36px 0;        
+}
+
+.responsive_box ul li img {
+    display: block;
+    margin: auto;        
+}
+
+#stationary {
+	position:absolute;	
+	top:-190px;
+	right:83%;
+	width:662px;
+	height:1069px;
+	background:url(./images/paper-and-pens.png) 0 0;
+}
+
+#ipad-display {
+	display:none;
+	position:relative;
+	margin:150px auto 0 auto;
+	width:768px;
+	height:1400px;
+	background:url(./images/ipad-device.png) no-repeat 0 0;	
+	background-size:100%;
+}
+
+#ipad-display #about_summary {
+	width: 520px;
+	float: left;
+	margin: 109px 104px;
+	padding: 22px;
+}
+#ipad-display #container3 {
+	padding-bottom:20px;
+	display: block !important;
+}
+
+#container30 ul {
+	padding: 5px 0px 0 0px;
+	list-style: none;
+	display: block;
+	width: 100%;
+}
+#container30 ul li {
+	display: inline-block;
+	vertical-align: top;
+	width: 160px;
+	margin: 30px 1% 30px 1%;
+}
+#container30 ul li img {
+	max-width:100%;	
+	margin:auto;
+	display: block;
+}
+
+
+#container40 ul {
+	padding: 5px 0px 0 0px;
+	list-style: none;
+	display: block;
+	width: 100%;
+}
+#container40 ul li {
+	display: inline-block;
+	vertical-align: top;
+	width: 160px;
+	margin: 6px 1% 5px 1%;
+}
+#container40 ul li img {
+	max-width:100%;	
+	margin:auto;
+	display: block;
+}
+
+#about_summary{
+	
+	width: 350px;
+	height: 690px;
+	padding: 15px;
+	background-image:url(./images/nav_background.png);
+}
+
+#about_summary_content{
+	width: 520px;
+	height: 720px;
+	
+}
+
+#mask{
+	margin: 0px 0px 0px 0px;
+
+	width: 520px;
+	height: 720px;
+	overflow: hidden;
+}
+
+#scrollDownBtn{
+	width:100%;
+	height:20px;
+	background-image:url(./images_scroll_down.png);
+	margin:140px 0px 20px 0px;
+	cursor:pointer;
+}
+
+#scrollUpBtn{
+	width:100%;
+	height:20px;
+	background-image:url(./images_scroll_up.png);
+	margin:10px 0px 20px 0px;
+	cursor:pointer;
+}
+
+
+/*  -----------------------------------------------------------------------------------
+	
+	 Modal version styling
+		
+    -----------------------------------------------------------------------------------*/
+#about {
+	float:left;
+	width:100%;
+	height:1000px;
+	background-image:url('./images/about-infographic.gif');
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:top;	
+}
+.modal-link {
+	position:relative;
+	top:20%;
+	left:35%;
+	background-color:rgb(255,255,255);
+	padding:10px 20px;
+	color:rgb(68,68,68) !important;
+	font-size:0.9em;
+	font-weight:bold;
+}
+
+
+
+
+
+#modal-background {
+	position:fixed;
+	z-index:9999;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.7);
+	display:none;	
+}
+#modal-1 {
+	position:absolute;
+	z-index:99999;
+	top:15%;
+	left:15%;
+	width:70%;
+	height:auto;
+	background-color:rgba(255,255,255,1);
+	display:none;	
+}
+.close-modal {
+	position:absolute;
+	top:15px;
+	right:15px;	
+	color:rgb(68,68,68) !important;
+	font-size:0.9em;
+	font-weight:bold;
+}
+#modal-1 #about_summary {
+	padding:3.5% !important;
+	width:93%!important;
+	margin-bottom:5%;
+}
+
+
+
+/* Fix modal width after 1200px browser width breakpoint */
+@media only screen and (min-width:1200px) {
+	#modal-1 {
+		width:840px;			
+	}
+}
+
+
+@media only screen and (max-width:870px) {
+	
+	/* About */
+	
+	#about-wrapper-btn{
+		display:none;
+	}
+	
+	#about-wrapper {
+		margin-top:0;
+		overflow:visible;
+        height: 1250px;	
+	}
+	#stationary {
+		right:88%;
+	}
+	#ipad-display {
+		display:block;
+		position:relative;
+		margin:150px auto 0 auto;
+		width:100%;
+		height:auto;
+		background:none;	
+	}
+
+	
+	#about-wrapper{
+		background-image:none !important;	
+	}
+	
+	#stationary{
+		background-image:none !important;	
+	}
+	
+	#ipad-display #about_summary {
+		width:90%;
+		float:none;
+		margin:-120px 0 0 0;
+		padding:5%;
+		border-bottom-color:#45555F;
+		background-image:none !important;
+		/*background:#fff !important	*/
+	}
+	
+	#mask{
+	width: 100%;
+	height: 100%;
+	overflow:visible;
+	
+	}
+	
+	#about_summary_content{
+	width: 100%;
+	height: 100%;
+	
+	}
+	
+	#about_summary{
+	
+	width: 100%;
+	height: 100%;
+	
+	}
+	
+	#scrollDownBtn{
+	display:none;
+	}
+
+	#scrollUpBtn{
+	display:none;
+	}
+	
+	
+}
+
+
+
+
+@media only screen and (max-width:520px) {
+	.responsive_box ul li {
+		width:100%;	
+	}
+        
+	#about-wrapper {
+		background-image:none;
+		background:#fff !important	
+	}
+	
+	.title {
+		margin: 10px 0 10px 0;
+	}
+}

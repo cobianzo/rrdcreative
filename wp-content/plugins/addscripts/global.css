@@ -1,0 +1,61 @@
+body {
+	height:100%; width:100%; background:url(../images/contact_page.jpg) 50% 50%; background-size:cover;overflow-x: hidden;
+	/*background:url(../images/BA_spread.jpg) 50% 50% no-repeat;  background-size:1448px 754px;*/
+}
+
+.contentMap {
+	height: 900px;
+	width:100%;
+	margin: 0 auto;
+	padding: 0;
+	
+}
+
+#map{
+	background:url(../images/Map_1900.png) 50% 20% no-repeat;  background-size: contain;
+}
+/*----------------- MEDIA QUERY retina --------------------*/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+
+}
+
+@media screen and (max-width: 1290px) {
+	
+	/* unused */
+	
+}
+
+@media screen and (max-width: 1070px) {
+	
+	/* unused */
+	
+}
+
+@media screen and (max-width: 768px) {
+	
+	/* unused */
+	
+}
+
+@media screen and (max-width: 480px) {
+    
+	/* unused */
+	
+}
+
+@media screen and (max-width: 400px) {
+
+   #map{
+	background:url(../images/_mobile/List_320.png) 50% 20% no-repeat;  background-size: contain;
+}
+	
+}

@@ -1,0 +1,301 @@
+body {
+	height:100%; width:100%; background:url(../images/contact_page.jpg) 50% 50%; background-size:cover;overflow-x: hidden;
+	/*background:url(../images/BA_spread.jpg) 50% 50% no-repeat;  background-size:1448px 754px;*/
+}
+
+#business_cards {
+	width:700px;
+	margin:200px 0px 0px 20px;
+	padding-bottom:100px;
+	position:absolute;
+}
+
+#business_card_1 {
+	/*background-image:url(../images/contact/business_card_stack.png); width:350px; height:243px; float:left;*/
+	background-image:url(../images/contact/business_cards_stack.png); width:352px; height:239px; float:left; margin-left:-10px; margin-right:19px;
+}
+
+#business_card_2 {
+	/*background-image:url(../images/contact/business_card_1.png); width:350px; height:243px; float:left;*/
+	background-image:url(../images/contact/business-card.png); width:328px; height:200px; float:left; margin:20px 0 0 0;
+}
+
+#business_card_3 {
+	/*background-image:url(../images/contact/business_card_1.png); width:350px; height:243px; float:left;*/
+	background-image:url(../images/contact/business-card.png); width:328px; height:200px; clear:left; float:left; margin-top:20px;
+}
+#business_card_2 .map-information,
+#business_card_3 .map-information{
+	position:relative;
+	top:10px;
+	left:20px;
+}
+
+#pens {
+	position:absolute;
+	margin:400px 0px 0px 1030px;
+	right:0px;
+}
+
+#penImage {
+	background-image:url(../images/contact/pens.png); width:273px; height:590px; float:left;
+}
+   
+#iphone {
+	position:absolute;
+	margin:100px 0px 0px 720px;
+}
+
+#iphoneImage {
+	background-image:url(../images/contact/iphone.png); width:336px; height:698px; float:left;
+}
+#iphoneSignalBar {
+	position:absolute;
+	width:120px;
+	height:16px;
+	top:103px;
+	left:64px;
+	background:url(../images/contact/iphone-signal-bar-gradient.png) repeat-x 0 0;	
+}
+#iphoneHeaderBar {
+	position: absolute;
+	width: 280px;
+	height: 36px;
+	top: 120px;
+	left: 27px;
+	background: url(../images/contact/iphone-header-bar-gradient.png) repeat-x 0 0;
+}
+#mapRefresh {
+	position:absolute;	
+	z-index:99999;
+	top:122px;
+	left:26px;
+	/*background:rgb(255,255,255);*/
+	background:url(../images/back_arrow.png) no-repeat 15px 8px;	
+	color:rgb(255,255,255);
+	font-size:0.9em;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	padding:0.5em 1em;
+	padding-left:35px !important;
+	cursor:pointer;
+	display:none;
+}
+#map {
+	position: absolute;
+	width: 280px;
+	height: 408px;
+	/*background:#09F;
+	opacity:0.5;*/
+	margin: 158px 0px 0px 27px;
+	top: -3px;
+}
+.map-information {
+	width:207px !important;
+}
+.map-information h2 {
+	color:rgb(68,68,68);
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:0.9em;
+}
+.map-information p {
+	color:#8D8D8D;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:0.8em;
+}
+.map-information a {
+	color:rgb(94,204,248);
+	font-weight:bold;
+}
+#iphoneStatusBar {
+	position:absolute;
+	width:280px;
+	height:36px;
+	bottom:101px;
+	left:27px;
+	background:url(../images/contact/iphone-status-bar-gradient.png) repeat-x 0 0;	
+}
+
+    
+#coffee {
+	position:absolute;
+	margin:50px 0px 0px 1040px;
+}
+
+#coffeeImage {
+	background-image:url(../images/contact/coffee.png); width:439px; height:335px; float:left;
+}
+
+#mapButton1 {
+	position:absolute;
+	margin:120px 0px 0px 158px;
+}
+
+#mapButton2 {
+	position:absolute;
+	margin:248px 0px 0px 82px;
+}
+
+#mapButton3 {
+	position:absolute;
+	margin:320px 0px 0px 238px;
+}
+
+.button {
+	width:22px;
+	height:22px;
+	background:#F30;
+}
+
+/*----------------- MEDIA QUERY retina --------------------*/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+
+}
+
+@media screen and (max-width: 1290px) {
+	
+	#pens {
+		right:200px;
+		bottom:0px;
+	}
+	
+	#penImage {
+		background:url(../images/contact/pens_horizontal.png) no-repeat; width:590px; height:273px; float:left;
+	}
+	
+}
+
+@media screen and (max-width: 1070px) {
+	
+	#business_cards {
+		width:350px;
+		margin:80px 0px 0px 100px;
+	}
+	
+	#iphone {
+		position:absolute;
+		margin:80px 0px 0px 450px;
+	}
+	
+	#pens {
+		display:none;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	
+	#business_cards {
+		width:350px;
+		margin:80px 0px 0px 20px;
+	}
+	
+	#iphone {
+		position:absolute;
+		margin:80px 0px 0px 400px;
+	}
+	
+	#pens {
+		display:block;
+
+	}
+    
+    #coffee,#iphoneStatusBar{
+        display:none;   
+    }
+	
+}
+
+@media screen and (max-width: 480px) {
+    body{
+         background-size:100%;    
+    }
+	#business_cards {
+		width:320px;
+		margin:60px auto 0;
+        position: relative;
+        padding-bottom: 0;
+	}
+	
+	#business_card_1 {
+		background-image: url(../images/contact/business_cards_stack.png); background-size:300px 208px; width:300px; height:198px;float:left;
+	    float: none;
+        margin-left: 0px;
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+
+	#business_card_2 {
+		background-image:url(../images/contact/business-card.png); background-size:280px 208px; width:280px; height:208px;
+        float: none;
+        background-repeat:no-repeat;
+        margin-left: 0px;
+        margin: 0 auto;
+        padding: 5px;
+	}
+
+	#business_card_3 {
+		background-image:url(../images/contact/business-card.png);background-size:280px 208px; width:280px; height:208px;	    float: none;
+        margin-left: 2px;
+        margin: 0 auto;
+        background-repeat:no-repeat;
+        padding: 5px;
+	}
+	
+	#iphone {
+		position: relative;
+        margin: 0 auto;
+        width: 100%;
+        clear: both;
+    }
+	
+	#iphoneImage {
+	    background-image:none;
+        float:none;
+        width: 100%;
+        height: 496px;
+	}
+   
+	
+    #map {
+        width: 100%;
+        height: 408px;
+        margin: 0px auto;
+        top: 0;
+		
+        position: relative;
+        border-top: 44px solid #455560;
+    }
+    #mapRefresh {
+        top: 7px;
+        left: 55px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #iphoneImage {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #map {
+        width: 100%;
+    }
+	#iphone {
+		position: relative;
+        margin: 0 auto;
+        width: 100%;
+        clear: both;
+    }
+	
+}
