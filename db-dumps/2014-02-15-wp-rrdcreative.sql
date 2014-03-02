@@ -16,12 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `wp-rrdstatic`
+-- Current Database: `wp_rrdstatic`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `wp-rrdstatic` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `wp_rrdstatic` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
-USE `wp-rrdstatic`;
+USE `wp_rrdstatic`;
 
 --
 -- Table structure for table `wp_commentmeta`
