@@ -128,4 +128,25 @@ function my_attachments( $attachments )
 }
 
 add_action( 'attachments_register', 'my_attachments' );
-?>
+
+
+
+
+
+
+
+/**
+ * @var $roleObject WP_Role
+ */
+$roleObject = get_role( 'editor' );
+if (!$roleObject->has_cap( 'edit_theme_options' ) ) {
+    $roleObject->add_cap( 'edit_theme_options' );
+}
+
+add_action( 'after_setup_theme','remove_twentyeleven_options', 100 );
+function remove_twentyeleven_options() {
+
+	remove_custom_background();
+	remove_custom_image_header();
+
+}
