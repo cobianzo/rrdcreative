@@ -34,3 +34,18 @@ add_action('wp_enqueue_scripts', 'rddcreative_scripts');
 
 
 
+
+
+
+add_action("wp_footer", "select_menu_on_client_single", 21);
+function select_menu_on_client_single(){ 
+
+	if (is_single() && get_post_type() ==  'clients'){ ?>
+	
+		<script>
+		jQuery('.menu-item-28').addClass('current-menu-item');
+		</script>
+		<?php
+	}
+}
+
