@@ -4,7 +4,7 @@
 *
 *---------------------------------------------------------------------------------------------*/
 
-.number {max-width: 50px;}
+.number {max-width: 100px;}
 
 .acf-hidden {
 	display: none !important;

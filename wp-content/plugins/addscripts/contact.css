@@ -1,6 +1,6 @@
 body {
-	height:100%; width:100%; background:url(../images/contact_page.jpg) 50% 50%; background-size:cover;overflow-x: hidden;
-	/*background:url(../images/BA_spread.jpg) 50% 50% no-repeat;  background-size:1448px 754px;*/
+	height:100%; width:100%; background:url(./images/contact_page.jpg) 50% 50%; background-size:cover;overflow-x: hidden;
+	/*background:url(./images/BA_spread.jpg) 50% 50% no-repeat;  background-size:1448px 754px;*/
 }
 
 #business_cards {
@@ -11,18 +11,18 @@ body {
 }
 
 #business_card_1 {
-	/*background-image:url(../images/contact/business_card_stack.png); width:350px; height:243px; float:left;*/
-	background-image:url(../images/contact/business_cards_stack.png); width:352px; height:239px; float:left; margin-left:-10px; margin-right:19px;
+	/*background-image:url(./images/contact/business_card_stack.png); width:350px; height:243px; float:left;*/
+	background-image:url(./images/contact/business_cards_stack.png); width:352px; height:239px; float:left; margin-left:-10px; margin-right:19px;
 }
 
 #business_card_2 {
-	/*background-image:url(../images/contact/business_card_1.png); width:350px; height:243px; float:left;*/
-	background-image:url(../images/contact/business-card.png); width:328px; height:200px; float:left; margin:20px 0 0 0;
+	/*background-image:url(./images/contact/business_card_1.png); width:350px; height:243px; float:left;*/
+	background-image:url(./images/contact/business-card.png); width:328px; height:200px; float:left; margin:20px 0 0 0;
 }
 
 #business_card_3 {
-	/*background-image:url(../images/contact/business_card_1.png); width:350px; height:243px; float:left;*/
-	background-image:url(../images/contact/business-card.png); width:328px; height:200px; clear:left; float:left; margin-top:20px;
+	/*background-image:url(./images/contact/business_card_1.png); width:350px; height:243px; float:left;*/
+	background-image:url(./images/contact/business-card.png); width:328px; height:200px; clear:left; float:left; margin-top:20px;
 }
 #business_card_2 .map-information,
 #business_card_3 .map-information{
@@ -38,7 +38,7 @@ body {
 }
 
 #penImage {
-	background-image:url(../images/contact/pens.png); width:273px; height:590px; float:left;
+	background-image:url(./images/contact/pens.png); width:273px; height:590px; float:left;
 }
    
 #iphone {
@@ -47,7 +47,7 @@ body {
 }
 
 #iphoneImage {
-	background-image:url(../images/contact/iphone.png); width:336px; height:698px; float:left;
+	background-image:url(./images/contact/iphone.png); width:336px; height:698px; float:left;
 }
 #iphoneSignalBar {
 	position:absolute;
@@ -55,7 +55,7 @@ body {
 	height:16px;
 	top:103px;
 	left:64px;
-	background:url(../images/contact/iphone-signal-bar-gradient.png) repeat-x 0 0;	
+	background:url(./images/contact/iphone-signal-bar-gradient.png) repeat-x 0 0;	
 }
 #iphoneHeaderBar {
 	position: absolute;
@@ -63,7 +63,7 @@ body {
 	height: 36px;
 	top: 120px;
 	left: 27px;
-	background: url(../images/contact/iphone-header-bar-gradient.png) repeat-x 0 0;
+	background: url(./images/contact/iphone-header-bar-gradient.png) repeat-x 0 0;
 }
 #mapRefresh {
 	position:absolute;	
@@ -71,7 +71,7 @@ body {
 	top:122px;
 	left:26px;
 	/*background:rgb(255,255,255);*/
-	background:url(../images/back_arrow.png) no-repeat 15px 8px;	
+	background:url(./images/back_arrow.png) no-repeat 15px 8px;	
 	color:rgb(255,255,255);
 	font-size:0.9em;
 	font-family:Arial, Helvetica, sans-serif;
@@ -114,7 +114,7 @@ body {
 	height:36px;
 	bottom:101px;
 	left:27px;
-	background:url(../images/contact/iphone-status-bar-gradient.png) repeat-x 0 0;	
+	background:url(./images/contact/iphone-status-bar-gradient.png) repeat-x 0 0;	
 }
 
     
@@ -124,7 +124,7 @@ body {
 }
 
 #coffeeImage {
-	background-image:url(../images/contact/coffee.png); width:439px; height:335px; float:left;
+	background-image:url(./images/contact/coffee.png); width:439px; height:335px; float:left;
 }
 
 #mapButton1 {
@@ -170,7 +170,7 @@ only screen and (                min-resolution: 2dppx) {
 	}
 	
 	#penImage {
-		background:url(../images/contact/pens_horizontal.png) no-repeat; width:590px; height:273px; float:left;
+		background:url(./images/contact/pens_horizontal.png) no-repeat; width:590px; height:273px; float:left;
 	}
 	
 }
@@ -228,7 +228,7 @@ only screen and (                min-resolution: 2dppx) {
 	}
 	
 	#business_card_1 {
-		background-image: url(../images/contact/business_cards_stack.png); background-size:300px 208px; width:300px; height:198px;float:left;
+		background-image: url(./images/contact/business_cards_stack.png); background-size:300px 208px; width:300px; height:198px;float:left;
 	    float: none;
         margin-left: 0px;
         margin: 0 auto;
@@ -236,7 +236,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 
 	#business_card_2 {
-		background-image:url(../images/contact/business-card.png); background-size:280px 208px; width:280px; height:208px;
+		background-image:url(./images/contact/business-card.png); background-size:280px 208px; width:280px; height:208px;
         float: none;
         background-repeat:no-repeat;
         margin-left: 0px;
@@ -245,7 +245,7 @@ only screen and (                min-resolution: 2dppx) {
 	}
 
 	#business_card_3 {
-		background-image:url(../images/contact/business-card.png);background-size:280px 208px; width:280px; height:208px;	    float: none;
+		background-image:url(./images/contact/business-card.png);background-size:280px 208px; width:280px; height:208px;	    float: none;
         margin-left: 2px;
         margin: 0 auto;
         background-repeat:no-repeat;

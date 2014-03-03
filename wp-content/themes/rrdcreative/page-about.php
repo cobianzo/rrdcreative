@@ -101,9 +101,9 @@ get_header();
               </div>
 
        </div>
-
-<?php
-
+                  <!--Buffer Bottom------------------------------------------------------------------------->   
+        <div id= "BufferBottom"></div> 
+ 
+<?php 
 get_footer(); 
-
 ?>

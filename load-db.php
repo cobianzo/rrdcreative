@@ -36,7 +36,7 @@ $mysql_username = 'jb';
 // MySQL password
 $mysql_password = 'cometaG';
 // Database name
-$mysql_database = 'wp-rrdstatic';
+$mysql_database = 'wp_rrdstatic';
 
 $localhost_url = "http://localhost/rrdstatic";
 

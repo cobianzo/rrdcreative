@@ -7,7 +7,12 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=0">
     <?php wp_head(); ?> <?php /* this is used by many Wordpress features and for plugins to work proporly */ ?>
-   
+   <?php 
+        global $post; 
+        if ($post->ID == 21 ){
+    ?>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <?php } ?>
 </head>
 
 <body>

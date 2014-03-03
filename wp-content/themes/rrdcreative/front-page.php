@@ -74,6 +74,10 @@
         $i++;
     endwhile;
     wp_reset_postdata();
-    
+    ?>
+                  <!--Buffer Bottom------------------------------------------------------------------------->   
+        <div id= "BufferBottom"></div> 
+ 
+<?php 
 get_footer(); 
 ?>

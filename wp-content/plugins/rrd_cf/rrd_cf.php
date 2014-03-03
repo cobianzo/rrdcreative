@@ -14,6 +14,7 @@ require_once('acf.php');
 
 add_action( 'init', 'create_clients' );
 add_action( 'init', 'create_about_boxes' );
+add_action( 'init', 'create_locations' );
 
 function create_clients() {
     $labels = array(
@@ -60,6 +61,33 @@ function create_about_boxes() {
   $supports = array('title',  'page-attributes');
 
   register_post_type( 'about_boxes',
+    array(
+      'labels' => $labels,
+      'public' => true,
+      'supports' => $supports,
+      'hierarchical' => true
+    )
+  );
+}
+
+function create_locations() {
+    $labels = array(
+    'name' => _x('Locations', 'post type general name'),
+    'singular_name' => _x('Location', 'post type singular name'),
+    'add_new' => _x('Add New', 'Location'),
+    'add_new_item' => __('Add new Location'),
+    'edit_item' => __('Edit Location'),
+    'new_item' => __('New Location'),
+    'view_item' => __('View Location'),
+    'search_items' => __('Search Locations'),
+    'not_found' =>  __('No locations found'),
+    'not_found_in_trash' => __('No locations found in Trash'),
+    'parent_item_colon' => ''
+  );
+
+  $supports = array('title',  'page-attributes');
+
+  register_post_type( 'locations',
     array(
       'labels' => $labels,
       'public' => true,
