@@ -14,7 +14,9 @@ function rddcreative_styles(){
     wp_register_style('about_css', plugins_url('about.css', __FILE__));  
     wp_enqueue_style('about_css');
     wp_register_style('contact_css', plugins_url('contact.css', __FILE__));  
-    wp_enqueue_style('contact_css');
+    global $post;
+    if (is_page() && $post->ID == 21) // TO_DO: el id no es buena idea
+	    wp_enqueue_style('contact_css');
     wp_register_style('Roboto', 'http://fonts.googleapis.com/css?family=Roboto');  
     wp_enqueue_style('Roboto');  
 }

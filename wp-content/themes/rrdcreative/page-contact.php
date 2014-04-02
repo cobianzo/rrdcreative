@@ -17,25 +17,19 @@ get_header();
     
     	<div id="business_card_2">
     		<div class='map-information' style='width:227px !important'>
-				<p><img src='<?php bloginfo('template_url');?>/images/rrd-creative-logo.png' alt='RRD Creative'>
-				<br><strong>London &amp; Edinburgh</strong></p>
-                <p>Carla Knight<br>
-                Director Creative Services</p>
-				<p><strong>t</strong> +44 (0) 203 047 4627<br>
-				<strong>m</strong> +44 (0) 7921 875 246<br>
-				<strong>e</strong> <a href='mailto:carla.y.knight@rrd.com'>carla.y.knight@rrd.com</a></p>
+    			<?php 
+    			echo apply_filters("the_content", get_post_meta(get_the_ID(), "card_1_text", true));
+    			?>
         	</div>
     	</div>
     
     
     	<div id="business_card_3">
     		<div class='map-information' style='width:227px !important'>
-                <p><img src='<?php bloginfo('template_url');?>/images/rrd-creative-logo.png' alt='RRD Creative'>
-                <br><strong>Dublin</strong></p>
-                <p>Liz Cahalane<br>Director of Media Services</p>
-                <p><strong>t</strong> +353 (1) 432 1208<br>
-                <strong>m</strong> +353 (86) 3850145<br>
-                <strong>e</strong> <a href='mailto:liz.a.cahalane@rrd.com'>liz.a.cahalane@rrd.com</a></p>
+    			<?php 
+				echo apply_filters("the_content", get_post_meta(get_the_ID(), "card_2_text", true));
+    			?>
+
             </div>
     	</div>
         

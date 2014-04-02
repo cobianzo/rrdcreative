@@ -13,9 +13,13 @@
     ?>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
     <?php } ?>
+    
+    
+    
+  
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 <!--IE specific div elements-->
 <div id="wrapper">
     <div id="container">

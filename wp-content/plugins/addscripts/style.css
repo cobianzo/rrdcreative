@@ -10,6 +10,11 @@ body{
 	padding:0;
 }
 
+body.home, body.single-clients{
+	background: white url('') !important;
+}
+
+
 a img {
 	
 	border:none;
@@ -871,9 +876,9 @@ only screen and (                min-resolution: 1.5dppx) {
 /*-------------------For Happy New Year Message-----------------------*/
 
 @media screen and (max-width: 1024px) {
-	#bawork3, #bawork6,#bawork8,#bawork9,#bawork10, #o2work2, #work10, #work9,#williswork1, #williswork2, #williswork3, #williswork4,  #loftwork2, #loftwork3, #loftwork4, #loftwork6, #zurichwork1, #zurichwork2, #zurichwork3, #zurichwork4, #zurichwork5{
+/*	#bawork3, #bawork6,#bawork8,#bawork9,#bawork10, #o2work2, #work10, #work9,#williswork1, #williswork2, #williswork3, #williswork4,  #loftwork2, #loftwork3, #loftwork4, #loftwork6, #zurichwork1, #zurichwork2, #zurichwork3, #zurichwork4, #zurichwork5{
 		background-size: contain !important;	
-	}
+	}*/
 	.contentConstants {
 		height: 480px !important;
 	}

@@ -66,8 +66,25 @@
             
                 $bg_img = get_field('background_image');
                 $img_x = get_field('background_image_x'); 
-                $img_y = get_field('background_image_y');       
-                echo '<div id="work'.$i.'" class="contentConstantsLine" style="background:url('.$bg_img[url].') '.$img_x.'% '.$img_y.'% no-repeat; background-size: cover;"></div>'; 
+                $img_y = get_field('background_image_y');
+           		$background_inline = 'background:url('.$bg_img[url].') '.$img_x.'% '.$img_y.'% no-repeat;';
+                
+                if (get_post_meta(get_the_ID(), 'background_resize', true) == 'resize_height')
+		         {
+		                $background_inline .=  ' background-size: 1448px 754px;';
+		                ?>
+		                    <style type="text/css">
+							    @media screen and (max-width: 1024px) {
+									#work<?php echo $i; ?> {
+							   		    background-size: contain !important;
+						   		    }
+						    	}
+						    </style>		                
+		                <?php
+		         }
+                else 	$background_inline .= ' background-size: cover;';
+                		
+                echo '<div id="work'.$i.'" class="contentConstantsLine" style="'.$background_inline.'"></div>'; 
             ?>
         </a>
     <?php    

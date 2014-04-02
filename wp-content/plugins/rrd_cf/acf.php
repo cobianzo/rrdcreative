@@ -31,10 +31,10 @@ if(function_exists("register_field_group"))
 				'label' => 'Background Image X',
 				'name' => 'background_image_x',
 				'type' => 'number',
-				'instructions' => 'Image Position Horizontal',
+				'instructions' => 'Image Position Horizontal (%)',
 				'default_value' => 50,
-				'placeholder' => '',
-				'prepend' => '',
+				'placeholder' => '50',
+				'prepend' => '%',
 				'append' => '',
 				'min' => 0,
 				'max' => 100,
@@ -45,15 +45,29 @@ if(function_exists("register_field_group"))
 				'label' => 'Background Image Y ',
 				'name' => 'background_image_y',
 				'type' => 'number',
-				'instructions' => 'Image Position Vertical',
+				'instructions' => 'Image Position Vertical (%)',
 				'default_value' => 50,
-				'placeholder' => '',
-				'prepend' => '',
+				'placeholder' => '50',
+				'prepend' => '%',
 				'append' => '',
 				'min' => 0,
 				'max' => 100,
 				'step' => '',
 			),
+			array (
+				'key' => 'field_533ae80b5b57e',
+				'label' => 'Background resize',
+				'name' => 'background_resize',
+				'type' => 'select',
+				'instructions' => 'Select which dimension is going to determine the resizing of the background image',
+				'choices' => array (
+					'resize_width' => 'Adjust the width of the background to the width of the screen',
+					'resize_height' =>  'Adjust the height of the background to the height of the container',
+				),
+				'default_value' => 'resize_width',
+				'allow_null' => 0,
+				'multiple' => 0,
+			),			
 		),
 		'location' => array (
 			array (
@@ -275,4 +289,136 @@ if(function_exists("register_field_group"))
 		),
 		'menu_order' => 0,
 	));
+	
+	
+	register_field_group(array (
+		'id' => 'acf_page-contact',
+		'title' => 'Contact Details',
+		'fields' => array (
+
+			array (
+				'key' => 'field_530b256aaabbbb',
+				'label' => 'Card #1 Text',
+				'name' => 'card_1_text',
+				'type' => 'wysiwyg',
+				'default_value' => '',
+				'toolbar' => 'full',
+				'media_upload' => 'yes',
+			),
+			array (
+				'key' => 'field_530b256aaaccccc',
+				'label' => 'Card #2 Text',
+				'name' => 'card_2_text',
+				'type' => 'wysiwyg',
+				'default_value' => '',
+				'toolbar' => 'full',
+				'media_upload' => 'yes',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page',
+					'operator' => '==',
+					'value' => '21',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+				'the_content',
+			),
+		),
+		'menu_order' => 0,
+	));
+	
+	
+		
+	
+	
+	
+	
 }
+
+// Locations
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_locations',
+		'title' => 'Locations',
+		'fields' => array (
+			array (
+				'key' => 'field_531391d170a79',
+				'label' => 'Label Image',
+				'name' => 'label_image',
+				'type' => 'image',
+				'save_format' => 'object',
+				'preview_size' => 'thumbnail',
+				'library' => 'all',
+			),
+			array (
+				'key' => 'field_5313922e70a7a',
+				'label' => 'Latitude',
+				'name' => 'latitude',
+				'type' => 'number',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'min' => '',
+				'max' => '',
+				'step' => '',
+			),
+			array (
+				'key' => 'field_5313924770a7b',
+				'label' => 'Longitude',
+				'name' => 'longitude',
+				'type' => 'number',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'min' => '',
+				'max' => '',
+				'step' => '',
+			),
+			array (
+				'key' => 'field_5313925a70a7c',
+				'label' => 'Details',
+				'name' => 'details',
+				'type' => 'wysiwyg',
+				'default_value' => '',
+				'toolbar' => 'full',
+				'media_upload' => 'yes',
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'locations',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
+
+
+
+

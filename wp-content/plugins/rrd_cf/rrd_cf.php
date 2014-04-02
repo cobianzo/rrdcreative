@@ -117,7 +117,7 @@ function my_attachments( $attachments )
   $args = array(
 
     // title of the meta box (string)
-    'label'         => 'Additional Images',
+    'label'         => '+ Additional Images',
 
     // all post types to utilize (string|array)
     'post_type'     => array( 'clients' ),
@@ -129,7 +129,7 @@ function my_attachments( $attachments )
     'priority'      => 'low',
 
     // allowed file type(s) (array) (image|video|text|audio|application)
-    'filetype'      => array (image),  // no filetype limit
+    'filetype'      => "image",  // no filetype limit
 
     // include a note within the meta box (string)
     'note'          => '',
@@ -148,8 +148,16 @@ function my_attachments( $attachments )
     'router'        => 'browse',
 
     // fields array
-    'fields'        => $fields,
-
+    'fields'        => array(
+        array( 'name' => 'title', 'type' => 'text', 'label' => __( 'Title', 'attachments' ),'default' => 'title' ),
+        array( 'name' => 'adjust_height', 
+        		'type' => 'select', 
+        		'label' => __( 'Adjust bg height', 'attachments' ),  
+        		'options' => array( 0 => "No", 1 => "Yes"),   
+        		'allow_null'    => false, 
+        		'default' => 0   
+        	),
+        )
   );
 
   $attachments->register( 'my_attachments', $args ); // unique instance name
