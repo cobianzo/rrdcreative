@@ -1,9 +1,54 @@
 <?php 
 
+function check_if_attachment_bg_style_height($post_id, $attach_id){
+	$list_all_attach_id = (get_post_meta($post_id, 'images_background_resize', true));
+	if (strpos(" ".$list_all_attach_id, "*$attach_id*" )) return 1;
+	return false;
+}
+
 
 // page clients (main one)
 if(function_exists("register_field_group"))
 {
+	$background_images_checkboxes = "";
+	 if (is_admin()) :
+	$post_id = $_GET['post'];	
+	 $attachments = new Attachments( 'my_attachments' );
+        $j = 2;
+        if( $attachments->exist() ) : 
+            while( $attachments->get() ) :	            
+            	$attach_info = wp_get_attachment_image_src($attachments->id(), "thumbnail" );
+	            $background_images_checkboxes .= "
+	            <div style='float:left; text-align:center; margin:5px;' >
+	            	<img width=100 height=100 src='".$attach_info[0]."' style='border:5px solid #ccaacc'><br>";
+	            $background_images_checkboxes .= "
+	            <input class='bg-style-height-input' data-attachid='".$attachments->id()."' name='bg-style-height-".$attachments->id()."' id='bg-style-height-".$attachments->id()."' 
+	            	".(( check_if_attachment_bg_style_height($post_id, $attachments->id()) ==  1 )? "checked='checked" : '')." value='".$attachments->id()."' type='checkbox' 
+	            	onclick='update_post_attachments_bg_input(\"bg-style-height-".$attachments->id()."\");'  />
+	            </div>";
+    	        $j++;
+            endwhile;
+        endif;
+	endif;
+	$background_images_checkboxes .= " <hr style='width:100%;'>
+		<script>
+			function update_post_attachments_bg_input(input_id) {
+					var input_style = document.getElementById(input_id);
+					var post_input 	= document.getElementById('acf-field-images_background_resize');
+				    if (input_style.checked){
+				    	post_input.value = post_input.value.replace('*'+input_style.value+'*', '')+'*'+input_style.value+'*';
+				    }else{
+				    	post_input.value = post_input.value.replace('*'+input_style.value+'*', '');
+				    }
+			}
+		
+		</script>
+	
+	";
+	
+	
+	
+	
 	register_field_group(array (
 		'id' => 'acf_clients',
 		'title' => 'Clients',
@@ -63,11 +108,26 @@ if(function_exists("register_field_group"))
 				'choices' => array (
 					'resize_width' => 'Adjust the width of the background to the width of the screen',
 					'resize_height' =>  'Adjust the height of the background to the height of the container',
+					'bg_size_100' =>  'Background size 100%',
 				),
 				'default_value' => 'resize_width',
 				'allow_null' => 0,
 				'multiple' => 0,
 			),			
+			array (
+				'key' => 'field_533ae8fffffff',
+				'label' => '',
+				'name' => 'images_background_resize',
+				'type' => 'text',
+				'instructions' => 'For the rest of the images, select which ones will be adjusted by the height. Note that the list of images below is only updated when this page is Saved
+					
+				
+				
+				
+				'.$background_images_checkboxes,
+				'default_value' => '',
+			),			
+			
 		),
 		'location' => array (
 			array (

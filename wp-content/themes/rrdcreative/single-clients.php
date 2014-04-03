@@ -27,7 +27,7 @@
 
 </div>	
 </div>    <!--Header-->
-<!--Buffer Top------------------------------------------------------------------------->
+<!--Buffer Top ********************************************************************** -->
 <div id="BufferTop"></div>
 
 <?php     
@@ -58,18 +58,31 @@
         $bg_img = get_field('background_image');
         $img_x = get_field('background_image_x'); 
         $img_y = get_field('background_image_y');       
-        echo '<div id="'.$i.'_work1" class="contentConstants" style="background:url('.$bg_img[url].') '.$img_x.'% '.$img_y.'% no-repeat; background-size: cover;"></div>'; 
+
+   		$background_inline = 'background:url('.$bg_img[url].') '.$img_x.'% '.$img_y.'% no-repeat;';                
+   		$extra_class = 'resize-by-width';
+        if (($bg_resize = get_post_meta(get_the_ID(), 'background_resize', true)) == 'resize_height')
+	         $extra_class = ' resize-by-height';
+		elseif ($bg_resize == 'bg_size_100') $extra_class = ' bg-size-100';
+	
+        echo '	<div 	id="'.$i.'_work1" class="contentConstants '.$extra_class.'" 
+        				style="'.$background_inline.'">
+        		</div>'; 
 
         $attachments = new Attachments( 'my_attachments' );
         $j = 2;
-        if( $attachments->exist() ) : 
+        if( $attachments->exist() ) : // print_r($attachments);
             while( $attachments->get() ) :
-            echo '<div style="position:relative"><div class="sectionContainer"></div></div>';
-            echo '<div id="'.$i.'_work'.$j.'" class="contentConstants" style="background:url('.$attachments->url().') 50% 50% no-repeat; background-size: cover;"></div>'; 
-            $j++;
+		   		$background_inline = 'background:url('.$attachments->url().') 50% 50% no-repeat;';                
+   				$extra_class = 'resize-by-width';
+		        if (check_if_attachment_bg_style_height(get_the_ID(), $attachments->id()))
+	    	     $extra_class = ' resize-by-height';            
+            	echo '<div style="position:relative"><div class="sectionContainer"></div></div>';
+	            echo '<div id="'.$i.'_work'.$j.'" class="contentConstants '.$extra_class.'" style="'.$background_inline.'"></div>'; 
+    	        $j++;
             endwhile;
         endif;
-        
+        echo "<hr style='height:0px; margin:0; padding:0; border-bottom:3px solid #45555F;'>"; # end of set of attachments
         ?>
                
             
@@ -80,7 +93,7 @@
     
     wp_reset_postdata();
     ?>
-          <!--Buffer Bottom------------------------------------------------------------------------->   
+          <!--Buffer Bottom******************************************************************-->   
         <div id= "BufferBottom"></div>  
      
 <?php 

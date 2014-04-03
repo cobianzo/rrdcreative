@@ -293,6 +293,15 @@ li.current-menu-item a{
 
 /* Index Sections */
 
+.resize-by-height {
+	background-size: 1448px 754px !important;
+}
+.resize-by-width {
+	background-size: cover !important;
+}
+.bg-size-100 { 	background-size: 100% !important; }
+
+
 #hero{
 	background-size: cover;
 	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
@@ -875,6 +884,7 @@ only screen and (                min-resolution: 1.5dppx) {
 
 /*-------------------For Happy New Year Message-----------------------*/
 
+
 @media screen and (max-width: 1024px) {
 /*	#bawork3, #bawork6,#bawork8,#bawork9,#bawork10, #o2work2, #work10, #work9,#williswork1, #williswork2, #williswork3, #williswork4,  #loftwork2, #loftwork3, #loftwork4, #loftwork6, #zurichwork1, #zurichwork2, #zurichwork3, #zurichwork4, #zurichwork5{
 		background-size: contain !important;	
@@ -885,6 +895,11 @@ only screen and (                min-resolution: 1.5dppx) {
 	.contentConstantsLine {
 		height: 480px !important;
 	}
+	
+	.resize-by-height {
+		background-size: contain !important; /* ALV: added to allow two kind of response for bg images */
+	}
+	
 }
 
 /*  -----------------------------------------------------------------------------------
