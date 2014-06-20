@@ -20,9 +20,12 @@ if(function_exists("register_field_group"))
             	$attach_info = wp_get_attachment_image_src($attachments->id(), "thumbnail" );
 	            $background_images_checkboxes .= "
 	            <div style='float:left; text-align:center; margin:5px;' >
-	            	<img width=100 height=100 src='".$attach_info[0]."' style='border:5px solid #ccaacc'><br>";
+	            	<img 	class='".( (check_if_attachment_bg_style_height($post_id, $attachments->id()) ==  1 )? 'resize_h' : 'resize_w')."' 
+	            			width=70 height=70 src='".$attach_info[0]."'><br>";
 	            $background_images_checkboxes .= "
-	            <input class='bg-style-height-input' data-attachid='".$attachments->id()."' name='bg-style-height-".$attachments->id()."' id='bg-style-height-".$attachments->id()."' 
+	            <input class='bg-style-height-input' 
+	            	data-attachid='".$attachments->id()."' name='bg-style-height-".$attachments->id()."' 
+	            	id='bg-style-height-".$attachments->id()."' 
 	            	".(( check_if_attachment_bg_style_height($post_id, $attachments->id()) ==  1 )? "checked='checked" : '')." value='".$attachments->id()."' type='checkbox' 
 	            	onclick='update_post_attachments_bg_input(\"bg-style-height-".$attachments->id()."\");'  />
 	            </div>";
@@ -46,6 +49,15 @@ if(function_exists("register_field_group"))
 	
 	";
 	
+	add_action('admin_head', 'my_custom_css');
+	function my_custom_css() {
+	  echo '<style>
+	  #acf-images_background_resize #acf-field-images_background_resize { display:none;}
+	  #acf-images_background_resize .resize_w { border:5px solid transparent; border-top: 5px solid #ccaacc; border-bottom: 5px solid #ccaacc;}
+	  #acf-images_background_resize .resize_h { border:5px solid transparent; border-left: 5px solid #ccaacc; border-right: 5px solid #ccaacc;}
+	  
+	  </style>';
+	}
 	
 	
 	
@@ -119,7 +131,8 @@ if(function_exists("register_field_group"))
 				'label' => '',
 				'name' => 'images_background_resize',
 				'type' => 'text',
-				'instructions' => 'For the rest of the images, select which ones will be adjusted by the height. Note that the list of images below is only updated when this page is Saved
+				'instructions' => 'For the rest of the images, select which ones will be adjusted by the height. Note that the list of images below is only updated when this page is Saved. 
+									<br> Normally this style is applied when the image has white backgroung and there is an centered object in it.
 					
 				
 				
